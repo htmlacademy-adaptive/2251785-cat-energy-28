@@ -21,77 +21,49 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="program">
-        <h1 class="program__title">Подбор программы</h1>
-        <p class="program__sub-title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="field-form-group">
-            <h3 class="visually-hidden">Персональные данные(кота)</h3>
-            <label class="form__label">
-              ИМЯ:<sup>*</sup>
-              <input class="form__input" type="text" name="name" value="БАРСИК" required>
-            </label>
-            <label class="form__label">
-              Вес (кг):<sup>*</sup>
-              <input class="form__input" type="number" name="weight" value="7" required>
-            </label>
-            <label class="form__label">
-              Возраст (лет):<sup>*</sup>
-              <input class="form__input" type="number" name="age" value="7">
-            </label>
-          </fieldset>
-          <fieldset class="field-form-group">
-            <h3 class="visually-hidden">Выбор каталога</h3>
-            <input class="form__input form__radio" type="radio" name="catalog" id="loss" checked>
-            <label class="form__label" for="loss">похудение</label>
-            <input class="form__input form__radio" type="radio" name="catalog" id="gain">
-            <label class="form__label" for="gain">Набор массы</label>
-            <input class="form__input form__radio" type="radio" name="catalog" id="advice">
-            <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
-          </fieldset>
-          <fieldset class="field-form-group">
-            <legend class="field-form-group__title">Контактные данные(владельца кота)</legend>
-            <label class="form__label">
-              E-mail:<sup>*</sup>
-              <input type="email" name="email" value="kuklachev@gmail.com" required>
-            </label>
-            <label class="form__label">
-              Телефон:<sup>*</sup>
-              <input type="tel" name="telephone" value="8 (960) 900-60-90" required>
-            </label>
-          </fieldset>
-          <fieldset class="field-form-group">
-            <legend class="field-form-group__title">Комментарий</legend>
-            <label class="form__label">
-              <textarea class="field-form-group__habits" name="habits" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
-            </label>
-          </fieldset>
-          <fieldset class="field-form-group">
-            <legend class="checkbox-form-group__title">Дополнительно</legend>
-            <label class="form__label">
-              <input class="form__input form__checkbox" type="checkbox" name="sweetener">
-              сахарозаменитель
-            </label>
-            <label class="form__label">
-              <input class="form__input form__checkbox" type="checkbox" name="water">
-              питьевая вода
-            </label>
-            <label class="form__label">
-              <input class="form__input form__checkbox" type="checkbox" name="milk">
-              молоко
-            </label>
-            <label class="form__label">
-              <input class="form__input form__checkbox" type="checkbox" name="vitamins">
-              витамины
-            </label>
-          </fieldset>
-          <input type="submit" value="отправить заявку">
-          <p class="legend">
-            <small>
-              <sup>*</sup> — Обязательные поля
-            </small>
-          </p>
-        </form>
+      <section class="inner-catalog">
+        <h1 class="inner-catalog__title inner-catalog__title--separation">Каталог продукции</h1>
+        <ul class="inner-catalog__list">
+          <li class="inner-catalog__item inner-catalog__item--separation inner-catalog-item">
+            <img class="inner-catalog__image" src="" alt="">
+            <h3 class="inner-catalog-item__title">Cat Energy PRO 500 г</h3>
+            <dl class="inner-catalog-item__list">
+              <dt class="inner-catalog-item__term">Масса</dt>
+              <dd class="inner-catalog-item__description">500 г</dd>
+
+              <dt class="inner-catalog-item__term">Вкус</dt>
+              <dd class="inner-catalog-item__description">Курица</dd>
+
+              <dt class="inner-catalog-item__term">Цена</dt>
+              <dd class="inner-catalog-item__description">700 ₽</dd>
+            </dl>
+            <a class="inner-catalog-item__button button" href="#">Заказать</a>
+          </li>
+          <!--Добавить еще 6-->
+          <li class="inner-catalog__item inner-catalog__item--separation inner-catalog-all">
+            <h3 class="inner-catalog-all__title">Показать еще 100500 товаров</h3>
+            <p class="inner-catalog-all__sub-title">На самом деле вкусов гораздо больше!</p>
+            <a class="inner-catalog-all__button button" href="#">показать все</a>
+          </li>
+        </ul>
+        <div class="additionally">
+          <h2 class="additionally__title additionally__title--separation">Дополнительные товары</h2>
+          <ul class="additionally__list additionally-list">
+            <li class="additionally__item additionally-item additionally-item--separation">
+              <h3 class="additionally-item__title">Сахарозаменитель</h3>
+              <dl>
+                <dt>1 упаковка (100 г)</dt>
+                <dd>200 ₽</dd>
+              </dl>
+              <a class="additionally-item__button button" href="#">Заказать</a>
+            </li>
+            <!--Добавить еще 3-->
+          </ul>
+        </div>
+      </section>
+      <section class="gift">
+        <h2 class="visually-hidden">Подарки!</h2>
+        <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
       </section>
       <section class="contacts inner-contacts">
         <h2 class="contacts-title">приглашаем к сотрудничеству дилеров!</h2>
