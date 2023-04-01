@@ -6,17 +6,23 @@
   </head>
   <body class="page__body">
     <header class="main-header">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__image" src="/source/img/header-logo.svg" alt="Логотип">
+      </a>
       <nav class="main-nav">
-        <div class="main-header__logo">
-          <a class="main-header__link" href="#"></a>
-          <a class="main-header__link" href="#">
-            <svg width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.264 16.538A6.865 6.865 0 0 1 0 12.231V5.846a6.95 6.95 0 0 1 1.185-4.384C2.055.462 3.398 0 5.374 0s3.24.462 4.03 1.308a5.422 5.422 0 0 1 1.186 3.769v1.538H6.718V4.846a3.693 3.693 0 0 0-.238-1.538 1.12 1.12 0 0 0-.456-.473 1.163 1.163 0 0 0-.65-.143c-.553 0-.948.154-1.106.539a4.846 4.846 0 0 0-.237 1.692v8.23a3.111 3.111 0 0 0 .316 1.616c.158.385.553.539 1.106.539s.87-.154 1.027-.539c.18-.52.26-1.067.238-1.615v-1.846h3.872v1.538a5.775 5.775 0 0 1-1.185 3.846c-.79.923-2.134 1.385-4.031 1.385-1.897-.077-3.32-.539-4.11-1.539ZM15.253.23h4.504l3.32 17.54H19.44l-.632-3.693H16.2l-.632 3.692h-3.715l3.4-17.538Zm3.24 11.54-.948-6.847-.949 6.846h1.897Zm7.35-8.616h-2.687V.23h9.404v2.846h-2.687v14.692h-4.03V3.154ZM39.752.23h6.955v1.847h-4.505v5.77h3.635v1.768h-3.635v6.462h4.505v1.77h-7.034V.23h.079Zm9.009 0H50.5l5.137 11.616V.231h2.055v17.538h-1.58l-5.217-12v12h-2.134V.231Zm11.302 0h6.954v1.847h-4.504v5.77h3.635v1.768h-3.635v6.462h4.504v1.77h-6.954V.23Zm9.009 0h3.635a6.451 6.451 0 0 1 4.03 1.078c.87.692 1.265 1.923 1.265 3.538 0 2.23-.71 3.616-2.212 4.077l2.528 8.77h-2.45l-2.37-8.231h-1.976v8.23h-2.529V.231h.079Zm3.477 7.54a3.524 3.524 0 0 0 2.292-.616c.474-.385.711-1.154.711-2.308a4.848 4.848 0 0 0-.237-1.692 1.975 1.975 0 0 0-.869-.923 3.69 3.69 0 0 0-1.739-.308h-1.106v5.77h.948v.076Zm8.614 8.692A7.613 7.613 0 0 1 80.058 12V6.154a12.26 12.26 0 0 1 .395-3.308 3.916 3.916 0 0 1 1.502-2c.882-.508 1.9-.75 2.924-.692 1.66 0 2.845.384 3.556 1.23a5.77 5.77 0 0 1 1.107 3.847v.615H87.17v-.538a11.04 11.04 0 0 0-.158-1.923 1.533 1.533 0 0 0-.633-1A2.493 2.493 0 0 0 84.878 2a2.416 2.416 0 0 0-1.58.462c-.187.152-.338.34-.447.551a1.701 1.701 0 0 0-.186.68 14.01 14.01 0 0 0-.158 2.076v6.539a6.816 6.816 0 0 0 .474 2.923c.316.615.949.846 1.897.846.374.045.754-.018 1.092-.182.337-.165.617-.422.805-.741a6.908 6.908 0 0 0 .553-3.077v-1.23h-2.292v-1.77h4.584v8.692h-1.58l-.238-2a3.143 3.143 0 0 1-1.226 1.658 3.288 3.288 0 0 1-2.014.573 4.046 4.046 0 0 1-1.899-.352 3.932 3.932 0 0 1-1.5-1.186Zm13.515-4.847L90.805.308h2.371l2.766 8.461L98.63.308H101l-3.872 11.307v6.154h-2.371v-6.154h-.08Z" fill="#111"/></svg>
-          </a>
-        </div>
+        <button class="main-header__burger">
+          <span class="visually-hidden">Кнопка меню</span>
+        </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">главная</li>
-          <li class="main-nav__item">каталог продукции</li>
-          <li class="main-nav__item">подбор программы</li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <span class="main-nav__link main-nav__link--current">подбор программы</span>
+          </li>
         </ul>
       </nav>
     </header>
@@ -24,72 +30,80 @@
       <section class="program">
         <h1 class="program__title">Подбор программы</h1>
         <p class="program__sub-title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="program-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="field-form-group">
-            <legend class="visually-hidden">Персональные данные(кота).</legend>
+        <form class="program-form form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__fieldset">
+            <h2 class="visually-hidden">Персональные данные(кота).</h2>
             <label class="form__label">
               ИМЯ:<sup>*</sup>
               <input class="form__input" type="text" name="name" value="БАРСИК" required>
             </label>
             <label class="form__label">
               Вес (кг):<sup>*</sup>
-              <input class="form__input" type="number" name="weight" value="7" required>
+              <input class="form__input" type="text" name="weight" value="7" required>
             </label>
             <label class="form__label">
-              Возраст (лет):<sup>*</sup>
-              <input class="form__input" type="number" name="age" value="7">
+              Возраст (лет):
+              <input class="form__input" type="text" name="age" value="7">
             </label>
           </fieldset>
-          <fieldset class="field-form-group">
-            <legend class="visually-hidden">Выбор каталога.</legend>
-            <input class="form__input form__radio" type="radio" name="catalog" id="loss" checked>
-            <label class="form__label" for="loss">похудение</label>
-            <input class="form__input form__radio" type="radio" name="catalog" id="gain">
-            <label class="form__label" for="gain">Набор массы</label>
-            <input class="form__input form__radio" type="radio" name="catalog" id="advice">
-            <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
+          <fieldset class="form__fieldset">
+            <h2 class="visually-hidden">Выбор каталога.</h2>
+            <ul class="form__radio-list">
+              <li class="form__radio-item">
+                <input class="form__radio" type="radio" name="catalog" id="loss" checked>
+                <label class="form__radio-label" for="loss">похудение</label>
+              </li>
+              <li class="form__radio-item">
+                <input class="form__radio" type="radio" name="catalog" id="gain">
+                <label class="form__radio-label" for="gain">Набор массы</label>
+              </li>
+              <li class="form__radio-item">
+                <input class="form__radio" type="radio" name="catalog" id="advice">
+                <label class="form__radio-label" for="advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="field-form-group">
-            <legend class="field-form-group__title">Контактные данные(владельца кота)</legend>
+          <fieldset class="form__fieldset">
+            <h2 class="form__legend">Контактные данные(владельца кота)</h2>
             <label class="form__label">
               E-mail:<sup>*</sup>
-              <input type="email" name="email" value="kuklachev@gmail.com" required>
+              <input class="form__input form__input--email" type="email" name="email" value="kuklachev@gmail.com" required>
             </label>
             <label class="form__label">
               Телефон:<sup>*</sup>
-              <input type="tel" name="telephone" value="8 (960) 900-60-90" required>
+              <input class="form__input form__input--tel" type="tel" name="telephone" value="8 (960) 900-60-90" required>
             </label>
           </fieldset>
-          <fieldset class="field-form-group">
-            <legend class="field-form-group__title">Комментарий</legend>
+          <fieldset class="form__fieldset">
+            <h2 class="form__legend">Комментарий</h2>
             <label class="form__label">
-              <textarea class="field-form-group__habits" name="habits" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+              <textarea class="form__textarea" name="habits" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </fieldset>
-          <fieldset class="field-form-group">
-            <legend class="checkbox-form-group__title">Дополнительно</legend>
-            <label class="form__label">
-              <input class="form__input form__checkbox" type="checkbox" name="sweetener" checked>
-              сахарозаменитель
-            </label>
-            <label class="form__label">
-              <input class="form__input form__checkbox" type="checkbox" name="water">
-              питьевая вода
-            </label>
-            <label class="form__label">
-              <input class="form__input form__checkbox" type="checkbox" name="milk">
-              молоко
-            </label>
-            <label class="form__label">
-              <input class="form__input form__checkbox" type="checkbox" name="vitamins">
-              витамины
-            </label>
+          <fieldset class="form__fieldset">
+            <h2 class="form__legend">Дополнительно</h2>
+            <ul class="form__checkbox-list">
+              <li class="form__checkbox-item">
+                <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="form__checkbox-label" for="sweetener">сахарозаменитель</label>
+              </li>
+              <li class="form__checkbox-item">
+                <input class="form__checkbox" type="checkbox" name="water" id="water">
+                <label class="form__checkbox-label" for="water">питьевая вода</label>
+              </li>
+              <li class="form__checkbox-item">
+                <input class="form__checkbox" type="checkbox" name="milk" id="milk">
+                <label class="form__checkbox-label" for="milk">молоко</label>
+              </li>
+              <li class="form__checkbox-item">
+                <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <label class="form__checkbox-label" for="milk">витамины</label>
+              </li>
+            </ul>
           </fieldset>
-          <input type="submit" value="отправить заявку">
-          <p class="legend">
-            <small>
-              <sup>*</sup> — Обязательные поля
-            </small>
+          <button type="submit">отправить заявку</button>
+          <p class="form__legend">
+            <sup>*</sup> — Обязательные поля
           </p>
         </form>
       </section>
@@ -97,20 +111,30 @@
         <h2 class="contacts-title">приглашаем к сотрудничеству дилеров!</h2>
         <address>
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          <!-- Тут будет карта -->
         </address>
+        <iframe class="contacts__map" width="100%" height="362" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=362&amp;hl=ru&amp;q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F,%20%D0%B4.%2019/8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3+(Map)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__logo main-footer__logo--separation">
-        <a class="main-footer__link" href="#">
-          <svg width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.264 16.538A6.865 6.865 0 0 1 0 12.231V5.846a6.95 6.95 0 0 1 1.185-4.384C2.055.462 3.398 0 5.374 0s3.24.462 4.03 1.308a5.422 5.422 0 0 1 1.186 3.769v1.538H6.718V4.846a3.693 3.693 0 0 0-.238-1.538 1.12 1.12 0 0 0-.456-.473 1.163 1.163 0 0 0-.65-.143c-.553 0-.948.154-1.106.539a4.846 4.846 0 0 0-.237 1.692v8.23a3.111 3.111 0 0 0 .316 1.616c.158.385.553.539 1.106.539s.87-.154 1.027-.539c.18-.52.26-1.067.238-1.615v-1.846h3.872v1.538a5.775 5.775 0 0 1-1.185 3.846c-.79.923-2.134 1.385-4.031 1.385-1.897-.077-3.32-.539-4.11-1.539ZM15.253.23h4.504l3.32 17.54H19.44l-.632-3.693H16.2l-.632 3.692h-3.715l3.4-17.538Zm3.24 11.54-.948-6.847-.949 6.846h1.897Zm7.35-8.616h-2.687V.23h9.404v2.846h-2.687v14.692h-4.03V3.154ZM39.752.23h6.955v1.847h-4.505v5.77h3.635v1.768h-3.635v6.462h4.505v1.77h-7.034V.23h.079Zm9.009 0H50.5l5.137 11.616V.231h2.055v17.538h-1.58l-5.217-12v12h-2.134V.231Zm11.302 0h6.954v1.847h-4.504v5.77h3.635v1.768h-3.635v6.462h4.504v1.77h-6.954V.23Zm9.009 0h3.635a6.451 6.451 0 0 1 4.03 1.078c.87.692 1.265 1.923 1.265 3.538 0 2.23-.71 3.616-2.212 4.077l2.528 8.77h-2.45l-2.37-8.231h-1.976v8.23h-2.529V.231h.079Zm3.477 7.54a3.524 3.524 0 0 0 2.292-.616c.474-.385.711-1.154.711-2.308a4.848 4.848 0 0 0-.237-1.692 1.975 1.975 0 0 0-.869-.923 3.69 3.69 0 0 0-1.739-.308h-1.106v5.77h.948v.076Zm8.614 8.692A7.613 7.613 0 0 1 80.058 12V6.154a12.26 12.26 0 0 1 .395-3.308 3.916 3.916 0 0 1 1.502-2c.882-.508 1.9-.75 2.924-.692 1.66 0 2.845.384 3.556 1.23a5.77 5.77 0 0 1 1.107 3.847v.615H87.17v-.538a11.04 11.04 0 0 0-.158-1.923 1.533 1.533 0 0 0-.633-1A2.493 2.493 0 0 0 84.878 2a2.416 2.416 0 0 0-1.58.462c-.187.152-.338.34-.447.551a1.701 1.701 0 0 0-.186.68 14.01 14.01 0 0 0-.158 2.076v6.539a6.816 6.816 0 0 0 .474 2.923c.316.615.949.846 1.897.846.374.045.754-.018 1.092-.182.337-.165.617-.422.805-.741a6.908 6.908 0 0 0 .553-3.077v-1.23h-2.292v-1.77h4.584v8.692h-1.58l-.238-2a3.143 3.143 0 0 1-1.226 1.658 3.288 3.288 0 0 1-2.014.573 4.046 4.046 0 0 1-1.899-.352 3.932 3.932 0 0 1-1.5-1.186Zm13.515-4.847L90.805.308h2.371l2.766 8.461L98.63.308H101l-3.872 11.307v6.154h-2.371v-6.154h-.08Z" fill="#111"/></svg>
-        </a>
-      </div>
-      <ul class="main-footer__social main-footer__social--separation social-list">
-        <li class="social-list__item social-list__item--vk visually-hidden">Вконтакте.</li>
-        <li class="social-list__item social-list__item--youtube visually-hidden">Ютуб.</li>
-        <li class="social-list__item social-list__item--telegram visually-hidden">Телеграм.</li>
+      <a class="main-footer__logo" href="#">
+        <svg width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.264 16.538A6.865 6.865 0 0 1 0 12.231V5.846a6.95 6.95 0 0 1 1.185-4.384C2.055.462 3.398 0 5.374 0s3.24.462 4.03 1.308a5.422 5.422 0 0 1 1.186 3.769v1.538H6.718V4.846a3.693 3.693 0 0 0-.238-1.538 1.12 1.12 0 0 0-.456-.473 1.163 1.163 0 0 0-.65-.143c-.553 0-.948.154-1.106.539a4.846 4.846 0 0 0-.237 1.692v8.23a3.111 3.111 0 0 0 .316 1.616c.158.385.553.539 1.106.539s.87-.154 1.027-.539c.18-.52.26-1.067.238-1.615v-1.846h3.872v1.538a5.775 5.775 0 0 1-1.185 3.846c-.79.923-2.134 1.385-4.031 1.385-1.897-.077-3.32-.539-4.11-1.539ZM15.253.23h4.504l3.32 17.54H19.44l-.632-3.693H16.2l-.632 3.692h-3.715l3.4-17.538Zm3.24 11.54-.948-6.847-.949 6.846h1.897Zm7.35-8.616h-2.687V.23h9.404v2.846h-2.687v14.692h-4.03V3.154ZM39.752.23h6.955v1.847h-4.505v5.77h3.635v1.768h-3.635v6.462h4.505v1.77h-7.034V.23h.079Zm9.009 0H50.5l5.137 11.616V.231h2.055v17.538h-1.58l-5.217-12v12h-2.134V.231Zm11.302 0h6.954v1.847h-4.504v5.77h3.635v1.768h-3.635v6.462h4.504v1.77h-6.954V.23Zm9.009 0h3.635a6.451 6.451 0 0 1 4.03 1.078c.87.692 1.265 1.923 1.265 3.538 0 2.23-.71 3.616-2.212 4.077l2.528 8.77h-2.45l-2.37-8.231h-1.976v8.23h-2.529V.231h.079Zm3.477 7.54a3.524 3.524 0 0 0 2.292-.616c.474-.385.711-1.154.711-2.308a4.848 4.848 0 0 0-.237-1.692 1.975 1.975 0 0 0-.869-.923 3.69 3.69 0 0 0-1.739-.308h-1.106v5.77h.948v.076Zm8.614 8.692A7.613 7.613 0 0 1 80.058 12V6.154a12.26 12.26 0 0 1 .395-3.308 3.916 3.916 0 0 1 1.502-2c.882-.508 1.9-.75 2.924-.692 1.66 0 2.845.384 3.556 1.23a5.77 5.77 0 0 1 1.107 3.847v.615H87.17v-.538a11.04 11.04 0 0 0-.158-1.923 1.533 1.533 0 0 0-.633-1A2.493 2.493 0 0 0 84.878 2a2.416 2.416 0 0 0-1.58.462c-.187.152-.338.34-.447.551a1.701 1.701 0 0 0-.186.68 14.01 14.01 0 0 0-.158 2.076v6.539a6.816 6.816 0 0 0 .474 2.923c.316.615.949.846 1.897.846.374.045.754-.018 1.092-.182.337-.165.617-.422.805-.741a6.908 6.908 0 0 0 .553-3.077v-1.23h-2.292v-1.77h4.584v8.692h-1.58l-.238-2a3.143 3.143 0 0 1-1.226 1.658 3.288 3.288 0 0 1-2.014.573 4.046 4.046 0 0 1-1.899-.352 3.932 3.932 0 0 1-1.5-1.186Zm13.515-4.847L90.805.308h2.371l2.766 8.461L98.63.308H101l-3.872 11.307v6.154h-2.371v-6.154h-.08Z" fill="#111"/></svg>
+      </a>
+      <ul class="main-footer__social social-list">
+        <li class="social-list__item">
+          <a href="" class="social-list__link">
+            <p class="visually-hidden">Вконтакте.</p>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link">
+            <p class="visually-hidden">Ютуб.</p>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link">
+            <p class="visually-hidden">Телеграм.</p>
+          </a>
+        </li>
       </ul>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
