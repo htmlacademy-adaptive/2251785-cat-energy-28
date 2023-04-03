@@ -1,4 +1,6 @@
 @use "blocks/page.scss";
+@use "blocks/visually-hidden.scss";
+@use "blocks/button.scss";
 @use "blocks/main-header.scss";
 @use "blocks/header-nav.scss";
 @use "blocks/promo.scss";
@@ -7,5 +9,11 @@
 @use "blocks/example.scss";
 @use "blocks/contacts.scss";
 @use "blocks/main-footer.scss";
+@use "blocks/social-list.scss";
+@use "blocks/copyright.scss";
 @use "blocks/inner-contacts.scss";
 @use "blocks/program.scss";
+@use "blocks/form.scss";
+@use "blocks/catalog.scss";
+@use "blocks/additionally.scss";
+@use "blocks/gift.scss";

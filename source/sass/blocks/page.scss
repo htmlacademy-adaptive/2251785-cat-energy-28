@@ -22,19 +22,6 @@
         url("../fonts/oswald/oswaldmedium.woff") format("woff");
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .page__body {
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -51,14 +38,4 @@
   // --special_dark-grey: #444444;
   // --special_dark-grey-2: #222222;
   // --status_error: #FF8282;
-}
-
-.button {
-  background-color: #68B738;
-  font-family: 'Oswald', sans-serif;
-  font-style: normal;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: none;
 }
