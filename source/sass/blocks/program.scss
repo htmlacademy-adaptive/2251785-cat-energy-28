@@ -1,0 +1,97 @@
+.program {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  color: #000000;
+}
+
+.program__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program__sub-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  padding: 14px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid #E7E7E7;
+}
+
+.form__radio-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__radio-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form__legend {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__textarea {
+  padding: 10px 15px 10px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  border-color: #E7E7E7;
+  resize: none;
+}
+
+.form__checkbox-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__checkbox-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__button {
+  padding: 8px 76px;
+}
+
+.form__note {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
