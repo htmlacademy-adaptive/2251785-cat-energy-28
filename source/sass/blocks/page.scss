@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  src:  url("../fonts/lato/Lato-Regular.woff2") format("woff2"),
+        url("../fonts/lato/Lato-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src:  url("../fonts/oswald/oswaldregular.woff2") format("woff2"),
+        url("../fonts/oswald/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  src:  url("../fonts/oswald/oswaldmedium.woff2") format("woff2"),
+        url("../fonts/oswald/oswaldmedium.woff") format("woff");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  // --basic_green: #68B738;
+  // --basic_green-2: #5EAA2F;
+  // --basic_grey: #F2F2F2;
+  // --special_grey: #CDCDCD;
+  // --special_grey-2: #EBEBEB;
+  // --special_grey-3: #666666;
+  // --special_dark-grey: #444444;
+  // --special_dark-grey-2: #222222;
+  // --status_error: #FF8282;
+}

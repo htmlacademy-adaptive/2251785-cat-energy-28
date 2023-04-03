@@ -1,0 +1,55 @@
+.main-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-catalog__item {
+  background-color: #F2F2F2;
+}
+
+.main-catalog__title {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  text-transform: uppercase;
+
+  &--loss::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 54px;
+    background-image: url("../img/main-catalog/cat-loss.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--gain::before {
+    content: '';
+    display: block;
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/main-catalog/cat-gain.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.main-catalog__description {
+  margin: 0;
+}
+
+.main-catalog__link {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
