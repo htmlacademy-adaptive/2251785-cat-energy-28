@@ -1,3 +1,7 @@
+.contacts__wrapper {
+  padding: 26px 0;
+}
+
 .contacts-title {
   margin: 0;
   font-family: 'Oswald', sans-serif;
@@ -16,3 +20,6 @@
   line-height: 20px;
 }
 
+.contacts__map {
+  display: block; //убирает отступ под картой
+}
