@@ -3,3 +3,13 @@
   background-color: $basic_grey;
 }
 
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

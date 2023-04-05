@@ -8,3 +8,19 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+.main-header__container {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-header__burger {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
