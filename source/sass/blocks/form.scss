@@ -24,7 +24,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid $special_dark-grey-3;
 }
 
 .form__radio-list {
@@ -55,7 +55,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
-  border-color: #E7E7E7;
+  border-color: $special_dark-grey-3;
   resize: none;
 }
 

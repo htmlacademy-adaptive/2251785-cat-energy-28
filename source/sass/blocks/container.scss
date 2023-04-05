@@ -1,12 +1,12 @@
 .container {
-  width: calc(100vw - 20px*2);
+  width: calc(100vw - 20px * 2);
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: calc(100vw - 30px*2);
+    width: calc(100vw - 30px * 2);
   }
 
   @media (min-width: $desktop-width) {
-    width: calc(100vw - 110px*2);
+    width: calc(100vw - 110px * 2);
   }
 }

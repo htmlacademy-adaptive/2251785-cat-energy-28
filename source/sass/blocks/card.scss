@@ -11,6 +11,7 @@
   &--more {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   @media (min-width: $tablet-width) {
@@ -18,12 +19,6 @@
     flex-direction: column;
     background-color: $basic_grey;
   }
-}
-
-.card--more {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .card__image {
