@@ -1,11 +1,11 @@
 .example {
   padding: 25px 0 40px 0;
-  background-color: #F2F2F2;
+  background-color: $basic_grey;
 }
 
 .example__title {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -28,7 +28,7 @@
 
 .example__quantity {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -38,7 +38,7 @@
 
 .example__total {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
