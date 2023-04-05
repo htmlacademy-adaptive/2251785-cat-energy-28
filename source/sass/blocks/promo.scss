@@ -8,6 +8,16 @@
   color: #ffffff;
 }
 
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
 .promo__title {
   margin: 0;
   font-weight: 400;
@@ -21,6 +31,12 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.promo__image {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 }
 
 .promo__button {

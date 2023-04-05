@@ -17,7 +17,22 @@
   margin: 0;
 }
 
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .example__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 42px;
   margin: 0;
 }
 
