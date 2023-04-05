@@ -3,52 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img class="main-header__image" src="/source/img/header-logo.svg" alt="Логотип">
+        <img class="main-header__image" src="img/header-logo.svg" alt="Логотип">
       </a>
-      <nav class="main-nav">
+      <nav class="header-nav">
         <button class="main-header__burger">
           <span class="visually-hidden">Кнопка меню.</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <span class="main-nav__link main-nav__link--current">главная</span>
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <span class="header-nav__link header-nav__link--current">главная</span>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">подбор программы</a>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-container">
-      <section class="promo">
+    <main class="main">
+      <section class="main__promo promo">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__description">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="/source/img/promo-image.png" alt="CAT ENERGY PRO - курица. 500г.">
+        <img class="promo__image" src="img/promo-image.png" alt="CAT ENERGY PRO - курица. 500г.">
         <a class="promo__button button" href="#">подобрать программу</a>
       </section>
-      <section class="main-catalog">
+      <section class="main__index-catalog index-catalog">
         <h2 class="visually-hidden">Каталог.</h2>
-        <ul class="main-catalog__list">
-          <li class="main-catalog__item">
-            <h3 class="main-catalog__title main-catalog__title--loss">похудение</h3>
-            <p class="main-catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="main-catalog__link" href="#">каталог slim</a>
+        <ul class="index-catalog__list">
+          <li class="index-catalog__item">
+            <h3 class="index-catalog__title index-catalog__title--loss">похудение</h3>
+            <p class="index-catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="index-catalog__link" href="#">каталог slim</a>
           </li>
-          <li class="main-catalog__item">
-            <h3 class="main-catalog__title main-catalog__title--gain">набор массы</h3>
-            <p class="main-catalog__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="main-catalog__link" href="#">каталог pro</a>
+          <li class="index-catalog__item">
+            <h3 class="index-catalog__title index-catalog__title--gain">набор массы</h3>
+            <p class="index-catalog__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="index-catalog__link" href="#">каталог pro</a>
           </li>
         </ul>
       </section>
-      <section class="advantages">
+      <section class="main__advantages advantages">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -71,20 +72,20 @@
         <dl class="example__list">
           <div class="example__item">
             <dt class="example__term">снижение веса</dt>
-            <dd class="example__description">5 КГ</dd>
+            <dd class="example__quantity">5 КГ</dd>
           </div>
           <div class="example__item">
             <dt class="example__term">затрачено времени</dt>
-            <dd class="example__description">60 ДНЕЙ</dd>
+            <dd class="example__quantity">60 ДНЕЙ</dd>
           </div>
         </dl>
         <h3 class="example__total">Затраты на питание: 15 000 РУБ.</h3>
         <div class="example__slider">
           <div class="example__slide">
-            <img class="example__image" src="/source/img/example__slider/before.png" alt="Кот до функционального питания.">
+            <img class="example__image" src="img/example__slider/before.png" alt="Кот до функционального питания.">
           </div>
           <div class="example__slide">
-            <img class="example__image" src="/source/img/example__slider/after.png" alt="Кот после функционального питания.">
+            <img class="example__image" src="img/example__slider/after.png" alt="Кот после функционального питания.">
           </div>
           <div class="example__slider-control">
             <button class="example__slider-button">
@@ -94,10 +95,12 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts-title">приглашаем к сотрудничеству дилеров!</h2>
-        <address>
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+        <div class="contacts__wrapper">
+          <h2 class="contacts-title">приглашаем к сотрудничеству дилеров!</h2>
+          <address class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
         <iframe class="contacts__map" width="100%" height="362" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=362&amp;hl=ru&amp;q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F,%20%D0%B4.%2019/8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3+(Map)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
       </section>
     </main>
@@ -107,17 +110,17 @@
       </a>
       <ul class="main-footer__social social-list">
         <li class="social-list__item">
-          <a href="" class="social-list__link">
+          <a href="" class="social-list__link social-list__link--vk">
             <p class="visually-hidden">Вконтакте.</p>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="" class="social-list__link">
+          <a href="" class="social-list__link social-list__link--youtube">
             <p class="visually-hidden">Ютуб.</p>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="" class="social-list__link">
+          <a href="" class="social-list__link social-list__link--telegram">
             <p class="visually-hidden">Телеграм.</p>
           </a>
         </li>
