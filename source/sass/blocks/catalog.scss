@@ -13,40 +13,19 @@
 }
 
 .catalog__list {
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.catalog__item {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.catalog__heading {
-  margin: 0;
-  font-family: $font-oswald;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: $special_dark-grey-2;
-  text-transform: uppercase;
-  &--more {
-    color: #111111;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
   }
-}
 
-.catalog__description {
-  margin: 0;
-}
-
-.catalog__sub-title {
-  margin: 0;
-}
-
-.catalog__button--more {
-  background-color: $basic_grey;
-  color: $special_dark-grey;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
 }
