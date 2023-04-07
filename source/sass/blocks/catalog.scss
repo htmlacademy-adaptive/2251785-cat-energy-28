@@ -9,15 +9,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $basic_black;
 }
 
 .catalog__list {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);

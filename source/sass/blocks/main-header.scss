@@ -5,7 +5,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: #000000;
+  color: $basic_black;
   text-transform: uppercase;
 }
 
@@ -13,9 +13,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex-space-between;
   }
 }
 

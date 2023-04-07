@@ -6,8 +6,7 @@
 }
 
 .form__fieldset {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   margin: 0;
   padding: 0;
 }
@@ -28,9 +27,7 @@
 }
 
 .form__radio-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .form__radio-label {
@@ -50,6 +47,7 @@
 
 .form__textarea {
   padding: 10px 15px 10px 15px;
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -60,9 +58,7 @@
 }
 
 .form__checkbox-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 
   @media (min-width: $tablet-width) {
     display: grid;

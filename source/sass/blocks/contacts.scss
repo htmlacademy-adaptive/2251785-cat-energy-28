@@ -1,9 +1,8 @@
 .contacts__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex-space-between;
   column-gap: 20px;
-  padding: 26px 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .contacts-title {

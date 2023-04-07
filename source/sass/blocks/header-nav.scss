@@ -1,10 +1,8 @@
 .header-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .header-nav__link {
-  color: #000000;
+  color: $basic_black;
   text-decoration: none;
 }

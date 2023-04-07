@@ -4,8 +4,7 @@
 }
 
 .main-footer__container {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   text-align: center;
 
   @media (min-width: $tablet-width) {

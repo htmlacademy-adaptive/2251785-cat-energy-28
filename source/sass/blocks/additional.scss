@@ -5,18 +5,29 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $basic_black;
 }
 
 .additional__container {
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
 }
 
 .additional__list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  @include list-reset;
+}
+
+.additional__item {
+  @media (min-width: $desktop-width) {
+    @include flex-space-between;
+  }
 }
 
 .additional__heading {
@@ -31,18 +42,18 @@
 }
 
 .additional__items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex-space-between;
   margin: 0;
   line-height: 14px;
 }
 
 .additional__wrapper {
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex-space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -51,7 +62,9 @@
 }
 
 .additional__button {
-  display: block;
   min-height: 40px;
-  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }

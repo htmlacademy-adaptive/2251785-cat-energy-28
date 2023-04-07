@@ -2,9 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
@@ -23,7 +21,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  color: #000000;
+  color: $basic_black;
   text-transform: uppercase;
 
   &--loss::before {
@@ -57,7 +55,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: $basic_black;
   text-transform: uppercase;
   text-decoration: none;
 }
