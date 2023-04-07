@@ -9,9 +9,10 @@
 }
 
 .advantages__list {
+  @include list-reset;
+
   display: grid;
   grid-template-columns: 1fr;
-  @include list-reset;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
