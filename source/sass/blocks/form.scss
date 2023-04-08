@@ -1,4 +1,12 @@
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .form__fieldset {
+  @include flex-column;
   margin: 0;
   padding: 0;
 }
@@ -15,13 +23,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid $special_dark-grey-3;
 }
 
 .form__radio-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .form__radio-label {
@@ -29,7 +35,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #222222;
+  color: $special_dark-grey-2;
 }
 
 .form__legend {
@@ -41,19 +47,28 @@
 
 .form__textarea {
   padding: 10px 15px 10px 15px;
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
-  border-color: #E7E7E7;
+  color: $special_dark-grey;
+  border-color: $special_dark-grey-3;
   resize: none;
 }
 
 .form__checkbox-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .form__checkbox-label {
@@ -63,13 +78,21 @@
   text-transform: uppercase;
 }
 
+.form__wrapper-button {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 64px;
+  }
+}
+
 .form__button {
   padding: 8px 76px;
 }
 
 .form__note {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: $font-lato;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

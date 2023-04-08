@@ -1,29 +1,31 @@
 .index-catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .index-catalog__item {
-  background-color: #F2F2F2;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  background-color: $basic_grey;
 }
 
 .index-catalog__title {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  color: #000000;
+  color: $basic_black;
   text-transform: uppercase;
 
   &--loss::before {
-    content: '';
+    content: "";
     display: block;
     width: 50px;
     height: 54px;
@@ -33,7 +35,7 @@
   }
 
   &--gain::before {
-    content: '';
+    content: "";
     display: block;
     width: 67px;
     height: 50px;
@@ -43,17 +45,17 @@
   }
 }
 
-.index-catalog__description {
+.index-card__description {
   margin: 0;
 }
 
 .index-catalog__link {
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: $basic_black;
   text-transform: uppercase;
   text-decoration: none;
 }

@@ -1,17 +1,30 @@
 .advantages__title {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $basic_black;
 }
 
 .advantages__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 152px;
+    row-gap: 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 94px;
+    row-gap: 0;
+  }
 }
 
 .advantages__text {

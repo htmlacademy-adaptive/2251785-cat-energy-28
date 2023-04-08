@@ -1,6 +1,9 @@
 .button {
-  background-color: #68B738;
-  font-family: 'Oswald', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $basic_green;
+  font-family: $font-oswald;
   font-style: normal;
   color: #ffffff;
   text-transform: uppercase;

@@ -1,0 +1,69 @@
+.card {
+  display: grid;
+  grid-template-areas:
+    "img  title"
+    "img  items"
+    "btn  btn";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  &--more {
+    @include flex-column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include flex-column;
+    background-color: $basic_grey;
+  }
+}
+
+.card__image {
+  grid-area: img;
+}
+
+.card__heading {
+  margin: 0;
+  font-family: $font-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_dark-grey-2;
+  grid-area: title;
+  text-transform: uppercase;
+
+  &--more {
+    color: #111111;
+  }
+}
+
+.card__items {
+  grid-area: items;
+}
+
+.card__wrapper {
+  @include flex-space-between;
+}
+
+.card__description {
+  margin: 0;
+}
+
+.card__sub-title {
+  margin: 0;
+}
+
+.card__button {
+  min-height: 40px;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  grid-area: btn;
+
+  &--more {
+    background-color: $basic_grey;
+    color: $special_dark-grey;
+  }
+}

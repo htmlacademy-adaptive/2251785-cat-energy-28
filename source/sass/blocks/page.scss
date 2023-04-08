@@ -1,17 +1,9 @@
 .page__body {
-  font-family: "Lato", sans-serif;
+  margin: 0;
+  font-family: $font-lato;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
-  // --basic_green: #68B738;
-  // --basic_green-2: #5EAA2F;
-  // --basic_grey: #F2F2F2;
-  // --special_grey: #CDCDCD;
-  // --special_grey-2: #EBEBEB;
-  // --special_grey-3: #666666;
-  // --special_dark-grey: #444444;
-  // --special_dark-grey-2: #222222;
-  // --status_error: #FF8282;
+  color: $special_dark-grey;
 }

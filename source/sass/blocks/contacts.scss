@@ -1,10 +1,13 @@
-.contacts__wrapper {
-  padding: 26px 0;
+.contacts__container {
+  @include flex-space-between;
+  column-gap: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .contacts-title {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
