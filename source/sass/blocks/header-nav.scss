@@ -1,8 +1,104 @@
+.header-nav {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header-nav--closed .header-nav__list {
+    display: none;
+  }
+
+  .header-nav--nojs .header-nav__list{
+    display: block;
+  }
+}
+
 .header-nav__list {
   @include list-reset;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 66px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 36px;
+    margin-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 68px;
+  }
+}
+
+.header-nav__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: relative; //Подгон
+      top: -22px;
+      left: -20px;
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: $basic-grey-2;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.header-nav__item:last-child::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: relative; //Подгон
+    bottom: -24px;
+    left: -20px;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $basic-grey-2;
+  }
 }
 
 .header-nav__link {
+  padding: 10px 0; //Увеличение размера для удобства клика
   color: $basic_black;
   text-decoration: none;
+
+  &:hover:not(.header-nav__link--current) {
+    opacity: 0.6;
+  }
+
+  &:active:not(.header-nav__link--current) {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--current {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--current::after {
+      @media (min-width: $tablet-width) {
+        content: "";
+        display: block;
+        height: 2px;
+        margin-top: 6px;
+        background-color: $basic_green;
+      }
+    }
+  }
 }
