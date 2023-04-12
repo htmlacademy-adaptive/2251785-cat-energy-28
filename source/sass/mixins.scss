@@ -13,3 +13,19 @@
   display: flex;
   justify-content: space-between;
 }
+
+@mixin advantages-icon {
+  content: "";
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  @media (max-width: $mobile-width-only) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}

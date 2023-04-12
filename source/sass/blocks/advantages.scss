@@ -1,11 +1,16 @@
 .advantages__title {
   margin: 0;
+  margin-bottom: 40px;
   font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .advantages__list {
@@ -13,18 +18,49 @@
 
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 152px;
-    row-gap: 36px;
+    row-gap: 90px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 94px;
     row-gap: 0;
   }
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.advantages__item--nutrients::before {
+  @include advantages-icon;
+  background-image: url("../img/advantages/nutrients.svg");
+}
+
+.advantages__item--powder::before {
+  @include advantages-icon;
+  background-image: url("../img/advantages/powder.svg");
+}
+
+.advantages__item--meal::before {
+  @include advantages-icon;
+  background-image: url("../img/advantages/meal.svg");
+}
+
+.advantages__item--changes::before {
+  @include advantages-icon;
+  background-image: url("../img/advantages/changes.svg");
 }
 
 .advantages__text {

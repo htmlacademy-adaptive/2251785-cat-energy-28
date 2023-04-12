@@ -5,10 +5,52 @@
 
 .main-footer__container {
   @include flex-column;
+  align-items: center;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.main-footer__social {
+  margin: 0;
+  padding: 0;
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid $special_grey-4;
+    border-bottom: 1px solid $special_grey-4;
+  }
+}
+
+.main-footer__copyright {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 28px;
+    height: 34px;
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 28px;
   }
 }
