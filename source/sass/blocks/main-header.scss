@@ -10,6 +10,10 @@
   text-transform: uppercase;
   z-index: 1;
 
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $basic-grey-2;
+  }
+
   @media (min-width: $tablet-width) {
     position: static;
     padding: 0;
