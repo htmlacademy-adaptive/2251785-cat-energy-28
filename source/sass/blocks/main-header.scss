@@ -1,12 +1,32 @@
 .main-header {
-  padding: 12px 0 18px 0;
+  position: relative;
+  min-height: 66px;
   font-family: $font-oswald;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: $basic_black;
+  background-color: $basic_white;
   text-transform: uppercase;
+  z-index: 1000;
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $basic-grey-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-header__container {
@@ -17,8 +37,37 @@
   }
 }
 
-.main-header__burger {
+.main-header__logo {
+  float: left;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 12px;
+  }
+
   @media (min-width: $tablet-width) {
-    display: none;
+    float: left;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+  }
+}
+
+.main-header__image {
+  @media (min-width: $tablet-width) {
+    content: url("../img/main-header/logo-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    content: url("../img/main-header/logo-desktop.svg");
   }
 }

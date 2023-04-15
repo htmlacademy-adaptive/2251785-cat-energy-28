@@ -1,16 +1,46 @@
 .additional__title {
+  position: relative;
+  display: inline-block;
   margin: 0;
+  padding-right: 34px;
+  background-color: $basic_white;
   font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $basic_black;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 12px;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+
+    // &::before { //разобраться с дек линиями в контейнере
+    //   content: "";
+    //   position: absolute;
+    //   top: 20%;
+    //   display: block;
+    //   // width: 100vw;
+    //   height: 2px;
+    //   background-color: $basic_green;
+    //   z-index: -1;
+    // }
+  }
 }
 
 .additional__container {
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 245px;
@@ -23,6 +53,22 @@
 }
 
 .additional__item {
+  &:first-child {
+    border-top: 1px solid $special_grey-2;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 12px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid $special_grey-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid $special_grey-2;
+  }
+
   @media (min-width: $desktop-width) {
     @include flex-space-between;
   }
@@ -37,12 +83,36 @@
   line-height: 16px;
   color: $special_dark-grey-2;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional__items {
   @include flex-space-between;
   margin: 0;
-  line-height: 14px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 48px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 10px;
+  }
 }
 
 .additional__wrapper {
@@ -51,18 +121,30 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     width: 100%;
   }
 }
 
 .additional__description {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+  }
 }
 
 .additional__button {
   min-height: 40px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 244px;
+    margin-top: 0;
+    min-width: 244px;
   }
 }

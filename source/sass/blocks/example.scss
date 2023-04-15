@@ -1,27 +1,49 @@
 .example {
   padding: 25px 0 40px 0;
   background-color: $basic_grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic_grey;
+  }
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 40px;
   font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
   margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     column-gap: 166px;
+    margin-bottom: 96px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,24 +53,73 @@
 
 .example__list {
   display: flex;
-  flex-direction: row;
-  column-gap: 42px;
+  justify-content: center;
+  column-gap: 32px;
   margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    margin-bottom: 54px;
+  }
+}
+
+.example__item {
+  position: relative;
+  width: 124px;
+  border: 1px solid $special_grey;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .example__term {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  padding: 0 14px;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  background-color: $basic-grey;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    bottom: -5px;
+    min-width: 128px;
+    padding: 0 8px;
+    background-color: $basic-white;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
 }
 
 .example__quantity {
   margin: 0;
+  padding-top: 14px;
+  padding-bottom: 18px;
   font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $basic_black;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__total {
@@ -59,5 +130,40 @@
   font-size: 14px;
   line-height: 20px;
   color: $basic_black;
+  text-align: center;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 174px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    text-align: left;
+  }
+}
+
+.example__total--price {
+  @media (min-width: $desktop-width) {
+    margin-left: 62px;
+  }
+}
+
+.example__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // background-color: $basic_grey; //паддинги от контейнера
+}
+
+.example__slider-button {
+  border: none;
+  background-color: transparent;
 }

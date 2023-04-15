@@ -2,32 +2,153 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  &--indent {
+    margin-top: 34px;
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 76px;
+      margin-bottom: 64px;
+    }
   }
 }
 
 .form__fieldset {
   @include flex-column;
+  position: relative;
   margin: 0;
   padding: 0;
+  border: 0;
+
+  &--delimiter {
+    @media (max-width: $mobile-width-only) {
+      @include delimiter;
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 72px;
+    }
+  }
+}
+
+.form__fieldset-radio {
+  @media (min-width: $tablet-width) {
+    padding: 24px;
+    border: 1px solid $special_grey-2;
+  }
 }
 
 .form__label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__label--mail {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 18px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/form/icon_mail.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__label.form__label--mail {
+    margin-bottom: 0;
+  }
+}
+
+.form__label--tel {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 18px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/form/icon_tel.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.form__text {
+  white-space: nowrap;
+  color: $special_dark_grey;
 }
 
 .form__input {
+  width: 100%;
   padding: 14px 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   border: 1px solid $special_dark-grey-3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__label--mail .form__input {
+  padding-right: 44px;
+}
+
+.form__label--tel .form__input {
+  padding-right: 44px;
 }
 
 .form__radio-list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.form__radio-item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.form__radio {
+  margin: 0;
+  padding: 0;
+  margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .form__radio-label {
@@ -36,6 +157,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__legend {
@@ -43,9 +169,18 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__textarea {
+  width: 100%;
+  min-height: 150px;
+  margin-top: 36px;
+  margin-bottom: 22px;
   padding: 10px 15px 10px 15px;
   font-family: inherit;
   font-weight: 400;
@@ -55,10 +190,20 @@
   color: $special_dark-grey;
   border-color: $special_dark-grey-3;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 174px;
+    margin-top: 76px;
+    margin-bottom: 64px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__checkbox-list {
   @include list-reset;
+  margin-top: 34px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -71,11 +216,36 @@
   }
 }
 
+.form__checkbox-item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__checkbox {
+  margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
 .form__checkbox-label {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__wrapper-button {
@@ -88,6 +258,11 @@
 
 .form__button {
   padding: 8px 76px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .form__note {
@@ -97,4 +272,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
