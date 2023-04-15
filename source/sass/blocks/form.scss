@@ -29,6 +29,7 @@
       margin-bottom: 24px;
       padding-bottom: 24px;
     }
+
     @media (min-width: $tablet-width) {
       margin-bottom: 72px;
     }
@@ -79,9 +80,8 @@
 
 @media (min-width: $desktop-width) {
   .form__label.form__label--mail {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
-
 }
 
 .form__label--tel {
