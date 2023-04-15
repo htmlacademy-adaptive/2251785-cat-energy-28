@@ -1,12 +1,17 @@
 .index-catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding: 22px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 76px;
+    padding-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 76px;
+    min-height: 374px;
   }
 }
 
@@ -30,7 +35,6 @@
   display: flex;
   align-items: center;
   margin: 0;
-  margin-bottom: 22px;
   font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
@@ -40,6 +44,8 @@
   text-transform: uppercase;
 
   @media (max-width: $mobile-width-only) {
+    margin-bottom: 22px;
+
     &--loss::before {
       content: "";
       display: block;
@@ -64,8 +70,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
   }
 }
 
@@ -75,7 +86,8 @@
   border-bottom: 1px solid $special_grey-4;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 48px;
+    margin-bottom: 22px;
+    padding-bottom: 0;
     border-bottom: none;
     font-size: 16px;
     line-height: 24px;
@@ -98,7 +110,7 @@
 
   &::after {
     content: "";
-    width: 24px;
+    min-width: 24px;
     height: 12px;
     margin-left: 16px;
     background-image: url("../img/index-catalog/arrow.svg");
@@ -106,7 +118,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    margin-bottom: 34px; //52 - 18
+    padding-bottom: 0;
     font-size: 20px;
     line-height: 30px;
   }
