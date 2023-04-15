@@ -30,3 +30,16 @@
     margin-bottom: 30px;
   }
 }
+
+@mixin delimiter {
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $special_grey-2;
+  }
+}

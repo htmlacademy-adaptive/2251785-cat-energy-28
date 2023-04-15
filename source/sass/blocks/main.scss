@@ -1,11 +1,31 @@
 .main__promo {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .main__index-catalog {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .main__advantages {
   margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
 }

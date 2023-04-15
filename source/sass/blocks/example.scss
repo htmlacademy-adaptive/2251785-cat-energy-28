@@ -20,6 +20,11 @@
   font-size: 36px;
   line-height: 40px;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
@@ -28,6 +33,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -83,16 +90,16 @@
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    width: 128px;
-    padding: 0;
     bottom: -5px;
+    min-width: 128px;
+    padding: 0 8px;
     background-color: $basic-white;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
   }
 
   @media (min-width: $desktop-width) {
-    width: 128px;
-    padding: 0;
-    bottom: -5px;
     background-color: $basic-grey;
   }
 }
@@ -108,6 +115,11 @@
   line-height: 24px;
   color: $basic_black;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__total {
