@@ -40,6 +40,7 @@
 }
 
 .card__heading {
+  max-width: 145px;
   margin: 0;
   font-family: $font-oswald;
   font-style: normal;
@@ -117,6 +118,7 @@
 }
 
 .card__description {
+  max-width: 145px;
   margin: 0;
 }
 

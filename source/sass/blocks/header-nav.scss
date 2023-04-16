@@ -1,7 +1,7 @@
 .header-nav {
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-left: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -119,6 +119,18 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+
+.header-nav__item--index .header-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $basic_white;
+
+    &--current::after {
+      @media (min-width: $tablet-width) {
+        background-color: $basic_white;
+      }
+    }
   }
 }
 

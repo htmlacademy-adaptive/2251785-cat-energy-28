@@ -8,15 +8,25 @@
   font-style: normal;
   color: #ffffff;
 
-  @media (min-width: 410px) { //Исключ. из-за заднего фона
-    background-image: url("");
+  @media (min-width: $tablet-width) {
+    background-image: unset;
     color: $basic_black;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/promo/promo-background.jpg");
-    background-size: 50% auto;
-    background-position: center right;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 50%;
+      height: 694px;
+      background-image: url("../img/promo/promo-background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1000;
+    }
   }
 }
 
@@ -37,7 +47,7 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 86px;
+    padding-left: 86px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -52,7 +62,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-left: 86px;
+    padding-left: 86px;
     margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
