@@ -1,19 +1,29 @@
 .example {
-  padding: 25px 0 40px 0;
+  padding: 0;
+  padding-bottom: 40px;
   background-color: $basic_grey;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 0;
     background-color: $basic_white;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 76px;
     background-color: $basic_grey;
   }
+}
+
+.example__container {
+  position: relative;
+  padding: 0;
 }
 
 .example__title {
   margin: 0;
   margin-bottom: 40px;
+  padding: 0 20px;
+  padding-top: 25px;
   font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
@@ -22,32 +32,56 @@
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    padding-top: 42px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -136px;
+    padding: 0 110px;
   }
 }
 
 .example__description {
   margin: 0;
   margin-bottom: 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+    padding: 0 30px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
+    max-width: 1440px;
+    padding: 0 110px;
+    padding-top: 70px;
   }
 }
 
 .example__wrapper {
+  padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     column-gap: 166px;
     margin-bottom: 96px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+    width: 45%;
+    max-width: 1440px;
+    margin-bottom: 0;
+    padding: 0 110px;
   }
 }
 
@@ -160,10 +194,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 20px;
 
-  // @media (min-width: $tablet-width) {
-  //   background-color: $basic_grey; //паддинги от контейнера
-  // }
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    background-color: $basic_grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    max-width: 1440px;
+    padding: 0 110px;
+    background-color: transparent;
+    transform: translateY(-50%);
+  }
 }
 
 .example__slider-button {

@@ -3,6 +3,10 @@
     display: flex;
     padding-left: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 60%;
+  }
 }
 
 .header-nav__toggle {

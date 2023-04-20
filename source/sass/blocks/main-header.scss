@@ -62,13 +62,3 @@
     margin-top: 52px;
   }
 }
-
-.main-header__image {
-  @media (min-width: $tablet-width) {
-    content: url("../img/main-header/logo-tablet.svg");
-  }
-
-  @media (min-width: $desktop-width) {
-    content: url("../img/main-header/logo-desktop.svg");
-  }
-}

@@ -16,7 +16,11 @@
     <header class="main-header">
       <div class="main-header__container container">
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__image" src="img/main-header/logo-mobile.svg" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-header/logo-desktop.svg" width="202px" height="58px">
+            <source media="(min-width: 768px)" srcset="img/main-header/logo-tablet.svg" width="174px" height="52px">
+            <img class="main-header__image" src="img/main-header/logo-mobile.svg" width="192px" height="38px" alt="Логотип">
+          </picture>
         </a>
         <nav class="header-nav header-nav--closed header-nav--nojs">
           <button class="header-nav__toggle">
@@ -41,7 +45,11 @@
         <div class="promo__container container">
           <h1 class="promo__title">Функциональное <br> питание для котов</h1>
           <p class="promo__description">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="img/promo/promo-food.png" width="280" height="270" alt="CAT ENERGY PRO - курица. 500г.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/promo/promo-food-desktop@1x.png 1x, img/promo/promo-food-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/promo/promo-food-tablet@1x.png 1x, img/promo/promo-food-tablet@2x.png 2x">
+            <img class="promo__image" src="img/promo/promo-food-mobile@1x.png" width="280" height="270" srcset="img/promo/promo-food-mobile@2x.png 2x" alt="CAT ENERGY PRO - курица. 500г.">
+          </picture>
           <a class="promo__button button" href="#">подобрать программу</a>
         </div>
       </section>
@@ -104,10 +112,16 @@
           </div>
           <div class="example__slider">
             <div class="example__slide">
-              <img class="example__image" src="img/example__slider/before.png" alt="Кот до функционального питания.">
+              <picture>
+                <source media="min-width=(min-width: 768px)" srcset="img/example__slider/before-tablet@1x.png 1x, img/example__slider/before-tablet@2x.png 2x">
+                <img class="example__image" src="img/example__slider/before-mobile@1x.png" width="280" height="256" srcset="img/example__slider/before-mobile@2x.png 2x" alt="Кот до функционального питания.">
+              </picture>
             </div>
             <div class="example__slide">
-              <img class="example__image" src="img/example__slider/after.png" alt="Кот после функционального питания.">
+              <picture>
+                <source media="min-width=(min-width: 768px)" srcset="img/example__slider/after-tablet@1x.png 1x, img/example__slider/after-tablet@2x.png 2x">
+                <img class="example__image" src="img/example__slider/after-mobile@1x.png" width="280" height="256" srcset="img/example__slider/after-mobile@2x.png 2x" alt="Кот после функционального питания.">
+              </picture>
             </div>
             <div class="example__slider-control">
               <button class="example__slider-button">
@@ -134,18 +148,18 @@
         </a>
         <ul class="main-footer__social social-list">
           <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link--vk">
-              <p class="visually-hidden">Вконтакте.</p>
+            <a href="" class="social-list__link">
+              <img class="social-list__icon" src="img/main-footer/vk.svg" width="28" height="22" alt="Вконтакте">
             </a>
           </li>
           <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link--youtube">
-              <p class="visually-hidden">Ютуб.</p>
+            <a href="" class="social-list__link">
+              <img class="social-list__icon" src="img/main-footer/youtube.svg" width="28" height="22" alt="Ютуб">
             </a>
           </li>
           <li class="social-list__item">
-            <a href="" class="social-list__link social-list__link--telegram">
-              <p class="visually-hidden">Телеграм.</p>
+            <a href="" class="social-list__link">
+              <img class="social-list__icon" src="img/main-footer/telegram.svg" width="28" height="22" alt="Телеграм">
             </a>
           </li>
         </ul>
