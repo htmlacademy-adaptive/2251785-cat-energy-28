@@ -50,6 +50,7 @@
 
 .gift__description {
   margin: 0;
+  padding: 0 20px;
 
   &::before {
     content: "";
@@ -70,12 +71,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 124px;
+    margin-right: 14%;
     text-align: start;
 
     &::before {
       position: absolute;
-      left: 76px;
+      left: 10%;
     }
   }
 

@@ -1,11 +1,11 @@
 .header-nav {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-left: 40px;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 60%;
+    max-width: 50%; //При переполнении текст съезжает за фоновое изображение
   }
 }
 

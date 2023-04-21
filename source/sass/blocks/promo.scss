@@ -13,11 +13,14 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 62px;
     background-image: unset;
     color: $basic_black;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 112px;
+
     &::after {
       content: "";
       position: absolute;
@@ -61,6 +64,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .promo__description {
@@ -73,7 +80,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 86px;
-    margin-bottom: 20px;
+    margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -84,12 +91,16 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
+    top: 330px;
+    left: 50%;
     width: 710px;
     height: 610px;
+    transform: translateX(-50%);
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
+    left: unset;
     width: 552px;
     height: 500px;
     top: 142px;
@@ -99,6 +110,7 @@
 }
 
 .promo__button {
+  position: relative;
   padding: 12px 5px;
   font-weight: 400;
   font-size: 14px;
@@ -108,15 +120,13 @@
   @media (min-width: $tablet-width) {
     width: 244px;
     padding: 14px 26px;
-    margin-top: 28px;
     margin-left: 86px;
-    margin-bottom: 526px;
+    margin-bottom: 40px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-    margin-bottom: 266px;
   }
 }

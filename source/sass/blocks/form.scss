@@ -101,8 +101,27 @@
 }
 
 .form__text {
-  white-space: nowrap;
   color: $special_dark_grey;
+
+  &--name {
+    min-width: 48px;
+  }
+
+  &--weight {
+    min-width: 76px;
+  }
+
+  &--age {
+    min-width: 118px;
+  }
+
+  &--mail {
+    min-width: 64px;
+  }
+
+  &--tel {
+    min-width: 86px;
+  }
 }
 
 .form__input {
