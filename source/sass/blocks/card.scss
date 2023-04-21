@@ -24,7 +24,7 @@
   }
 }
 
-.card__image {
+.card__image-container {
   grid-area: img;
 
   @media (max-width: $mobile-width-only) {
@@ -33,9 +33,21 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -30px;
+    margin-top: -80px;
     margin-bottom: 34px;
     align-self: center;
+  }
+}
+
+.card__image {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
   }
 }
 
@@ -72,6 +84,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    max-width: 76px;
+
     &--more {
       margin-bottom: 8px;
     }
