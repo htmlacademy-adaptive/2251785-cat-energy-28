@@ -11,7 +11,6 @@
   &--more {
     @include flex-column;
     position: relative;
-    justify-content: space-between;
   }
 
   @media (min-width: $tablet-width) {
@@ -24,7 +23,7 @@
   }
 }
 
-.card__image {
+.card__image-container {
   grid-area: img;
 
   @media (max-width: $mobile-width-only) {
@@ -33,13 +32,38 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -30px;
+    margin-top: -80px;
     margin-bottom: 34px;
     align-self: center;
   }
 }
 
+.card__image {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+
+  &--more {
+    margin-bottom: 22px;
+    align-self: center;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      margin-top: 48px;
+      margin-bottom: 44px;
+    }
+  }
+}
+
 .card__heading {
+  max-width: 145px;
   margin: 0;
   font-family: $font-oswald;
   font-style: normal;
@@ -51,28 +75,18 @@
   text-transform: uppercase;
 
   &--more {
+    margin-bottom: 22px;
     align-self: center;
     color: #111111;
   }
 
-  &--more::before {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 50%;
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin-bottom: 22px;
-    background-image: url("../img/catalog/more.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    transform: translateX(-50%);
-  }
-
   @media (max-width: $mobile-width-only) {
+    max-width: 76px;
+
     &--more {
+      max-width: 134px;
       margin-bottom: 8px;
+      text-align: center;
     }
   }
 
@@ -117,6 +131,7 @@
 }
 
 .card__description {
+  max-width: 145px;
   margin: 0;
 }
 
@@ -153,6 +168,10 @@
   &--more {
     background-color: $basic_grey;
     color: $special_dark-grey;
+
+    @media (min-width: $tablet-width) {
+      margin-top: auto;
+    }
   }
 
   @media (min-width: $tablet-width) {

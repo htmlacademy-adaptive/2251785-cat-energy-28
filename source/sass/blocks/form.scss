@@ -101,13 +101,33 @@
 }
 
 .form__text {
-  white-space: nowrap;
   color: $special_dark_grey;
+
+  &--name {
+    min-width: 48px;
+  }
+
+  &--weight {
+    min-width: 76px;
+  }
+
+  &--age {
+    min-width: 118px;
+  }
+
+  &--mail {
+    min-width: 64px;
+  }
+
+  &--tel {
+    min-width: 86px;
+  }
 }
 
 .form__input {
   width: 100%;
   padding: 14px 20px;
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -129,8 +149,7 @@
 
 .form__radio-list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: space-between;
   height: 100%;
 }

@@ -3,6 +3,10 @@
     display: flex;
     margin-left: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 50%; //При переполнении текст съезжает за фоновое изображение
+  }
 }
 
 .header-nav__toggle {
@@ -119,6 +123,18 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+
+.header-nav__item--index .header-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $basic_white;
+
+    &--current::after {
+      @media (min-width: $tablet-width) {
+        background-color: $basic_white;
+      }
+    }
   }
 }
 

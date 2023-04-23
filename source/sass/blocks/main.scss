@@ -2,11 +2,12 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    min-height: 864px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    min-height: 664px;
   }
 }
 
@@ -26,6 +27,6 @@
   margin-bottom: 50px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 68px;
+    margin-bottom: 204px; // 68px + 136px - example title
   }
 }

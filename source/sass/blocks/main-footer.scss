@@ -37,15 +37,6 @@
   display: flex;
   align-items: center;
 
-  &::after {
-    content: "";
-    width: 28px;
-    height: 34px;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
   @media (max-width: $mobile-width-only) {
     width: 100%;
     justify-content: space-between;

@@ -24,6 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-color: transparent;
     font-size: 20px;
     line-height: 30px;
   }
@@ -64,10 +65,12 @@
 
 .main-header__image {
   @media (min-width: $tablet-width) {
-    content: url("../img/main-header/logo-tablet.svg");
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    content: url("../img/main-header/logo-desktop.svg");
+    width: 202px;
+    height: 58px;
   }
 }

@@ -36,37 +36,73 @@
 }
 
 .advantages__item {
+  position: relative;
   display: flex;
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    min-height: 226px;
     flex-direction: column;
     align-items: start;
   }
 }
 
+@media (min-width: $tablet-width), (min-width: $desktop-width) {
+  .advantages__item--nutrients {
+    &::after {
+      @include advantages-count;
+      content: "1";
+    }
+  }
+
+  .advantages__item--powder {
+    &::after {
+      @include advantages-count;
+      content: "2";
+    }
+  }
+
+  .advantages__item--meal {
+    &::after {
+      @include advantages-count;
+      content: "3";
+    }
+  }
+
+  .advantages__item--changes {
+    &::after {
+      @include advantages-count;
+      content: "4";
+    }
+  }
+}
+
 .advantages__item--nutrients::before {
   @include advantages-icon;
-  background-image: url("../img/advantages/nutrients.svg");
+  background-image: url("../img/icons/nutrients.svg");
 }
 
 .advantages__item--powder::before {
   @include advantages-icon;
-  background-image: url("../img/advantages/powder.svg");
+  background-image: url("../img/icons/powder.svg");
 }
 
 .advantages__item--meal::before {
   @include advantages-icon;
-  background-image: url("../img/advantages/meal.svg");
+  background-image: url("../img/icons/meal.svg");
 }
 
 .advantages__item--changes::before {
   @include advantages-icon;
-  background-image: url("../img/advantages/changes.svg");
+  background-image: url("../img/icons/changes.svg");
 }
 
 .advantages__text {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 220px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
