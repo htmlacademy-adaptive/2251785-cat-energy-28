@@ -25,8 +25,7 @@
 }
 
 .index-catalog__wrapper {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: space-between;
   min-height: 100%;
 
@@ -52,25 +51,16 @@
   text-transform: uppercase;
 
   &--loss::before {
+    @include index-catalog-icon;
     content: "";
-    display: block;
-    width: 68px;
-    min-width: 68px;
-    height: 50px;
-    background-image: url("../img/index-catalog/cat-loss.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-image: url("../img/icons/cat-loss.svg");
     margin-right: 18px;
 
     @media (min-width: $tablet-width) {
-      position: absolute;
-      top: 50%;
-      right: 60px;
+      @include index-catalog-tablet-icon;
       width: 200px;
       height: 212px;
-      margin-right: 0;
       background-size: 200px 212px;
-      transform: translateY(-50%);
     }
 
     @media (min-width: $desktop-width) {
@@ -86,25 +76,16 @@
   }
 
   &--gain::before {
+    @include index-catalog-icon;
     content: "";
-    display: block;
-    width: 68px;
-    min-width: 68px;
-    height: 50px;
-    background-image: url("../img/index-catalog/cat-gain.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-image: url("../img/icons/cat-gain.svg");
     margin-right: 10px;
 
     @media (min-width: $tablet-width) {
-      position: absolute;
-      top: 50%;
-      right: 60px;
+      @include index-catalog-tablet-icon;
       width: 268px;
       height: 200px;
-      margin-right: 0;
       background-size: 268px 200px;
-      transform: translateY(-50%);
     }
 
     @media (min-width: $desktop-width) {
@@ -172,7 +153,7 @@
     min-width: 24px;
     height: 12px;
     margin-left: 16px;
-    background-image: url("../img/index-catalog/arrow.svg");
+    background-image: url("../img/icons/arrow.svg");
   }
 
   @media (min-width: $tablet-width) {

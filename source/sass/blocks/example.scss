@@ -69,8 +69,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
     column-gap: 166px;
     margin-bottom: 96px;
     padding: 0 30px;
@@ -191,10 +190,11 @@
 }
 
 .example__slider {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
+  position: relative;
   justify-content: center;
   padding: 0 20px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -203,16 +203,41 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 40%;
+    top: -38%;
     right: 0;
     max-width: 1440px;
     padding: 0 110px;
     background-color: transparent;
-    transform: translateY(-50%);
+  }
+}
+
+.example__image {
+  &--before {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  }
+
+  &--after {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
   }
 }
 
 .example__slider-button {
+  position: absolute;
   border: none;
   background-color: transparent;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.example__slider-image {
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 }

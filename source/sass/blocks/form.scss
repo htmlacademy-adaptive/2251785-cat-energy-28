@@ -149,8 +149,7 @@
 
 .form__radio-list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: space-between;
   height: 100%;
 }

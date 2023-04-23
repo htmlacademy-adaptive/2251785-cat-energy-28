@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg">
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="manifest" href="/manifest.webmanifest">
     <!--   ---   -->
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,9 +17,9 @@
       <div class="main-header__container container">
         <a class="main-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/main-header/logo-desktop.svg" width="202px" height="58px">
-            <source media="(min-width: 768px)" srcset="img/main-header/logo-tablet.svg" width="174px" height="52px">
-            <img class="main-header__image" src="img/main-header/logo-mobile.svg" width="192px" height="38px" alt="Логотип">
+            <source media="(min-width: 1200px)" srcset="img/content/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/content/logo-tablet.svg">
+            <img class="main-header__image" src="img/content/logo-mobile.svg" width="192" height="38" alt="Логотип">
           </picture>
         </a>
         <nav class="header-nav header-nav--closed header-nav--nojs">
@@ -46,9 +46,9 @@
           <h1 class="promo__title">Функциональное <br> питание для котов</h1>
           <p class="promo__description">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/promo/promo-food-desktop@1x.png 1x, img/promo/promo-food-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/promo/promo-food-tablet@1x.png 1x, img/promo/promo-food-tablet@2x.png 2x">
-            <img class="promo__image" src="img/promo/promo-food-mobile@1x.png" width="280" height="270" srcset="img/promo/promo-food-mobile@2x.png 2x" alt="CAT ENERGY PRO - курица. 500г.">
+            <source media="(min-width: 1200px)" srcset="img/content/promo-food-desktop@1x.png 1x, img/content/promo-food-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/content/promo-food-tablet@1x.png 1x, img/content/promo-food-tablet@2x.png 2x">
+            <img class="promo__image" src="img/content/promo-food-mobile@1x.png" width="280" height="270" srcset="img/content/promo-food-mobile@2x.png 2x" alt="CAT ENERGY PRO - курица. 500г.">
           </picture>
           <a class="promo__button button" href="#">подобрать программу</a>
         </div>
@@ -111,21 +111,17 @@
             <h3 class="example__total">Затраты на питание: <span class="example__total--price">15 000 РУБ.</span></h3>
           </div>
           <div class="example__slider">
-            <div class="example__slide">
-              <picture>
-                <source media="min-width=(min-width: 768px)" srcset="img/example__slider/before-tablet@1x.png 1x, img/example__slider/before-tablet@2x.png 2x">
-                <img class="example__image" src="img/example__slider/before-mobile@1x.png" width="280" height="256" srcset="img/example__slider/before-mobile@2x.png 2x" alt="Кот до функционального питания.">
-              </picture>
-            </div>
-            <div class="example__slide">
-              <picture>
-                <source media="min-width=(min-width: 768px)" srcset="img/example__slider/after-tablet@1x.png 1x, img/example__slider/after-tablet@2x.png 2x">
-                <img class="example__image" src="img/example__slider/after-mobile@1x.png" width="280" height="256" srcset="img/example__slider/after-mobile@2x.png 2x" alt="Кот после функционального питания.">
-              </picture>
-            </div>
+            <picture>
+              <source media="min-width=(min-width: 768px)" srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
+              <img class="example__image example__image--before" src="img/content/before-mobile@1x.png" width="280" height="256" srcset="img/content/before-mobile@2x.png 2x" alt="Кот до функционального питания.">
+            </picture>
+            <picture style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">
+              <source media="min-width=(min-width: 768px)" srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
+              <img class="example__image example__image--after" src="img/content/after-mobile@1x.png" width="280" height="256" srcset="img/content/after-mobile@2x.png 2x" alt="Кот после функционального питания.">
+            </picture>
             <div class="example__slider-control">
               <button class="example__slider-button">
-                <span class="visually-hidden">Переключатель.</span>
+                <img class="example__slider-image" src="img/icons/slider.svg" alt="Переключатель.">
               </button>
             </div>
           </div>
@@ -149,22 +145,25 @@
         <ul class="main-footer__social social-list">
           <li class="social-list__item">
             <a href="" class="social-list__link">
-              <img class="social-list__icon" src="img/main-footer/vk.svg" width="28" height="22" alt="Вконтакте">
+              <img class="social-list__icon" src="img/content/vk.svg" width="28" height="22" alt="Вконтакте">
             </a>
           </li>
           <li class="social-list__item">
             <a href="" class="social-list__link">
-              <img class="social-list__icon" src="img/main-footer/youtube.svg" width="28" height="22" alt="Ютуб">
+              <img class="social-list__icon" src="img/content/youtube.svg" width="28" height="22" alt="Ютуб">
             </a>
           </li>
           <li class="social-list__item">
             <a href="" class="social-list__link">
-              <img class="social-list__icon" src="img/main-footer/telegram.svg" width="28" height="22" alt="Телеграм">
+              <img class="social-list__icon" src="img/content/telegram.svg" width="28" height="22" alt="Телеграм">
             </a>
           </li>
         </ul>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/">
+            <span class="copyright__text">HTML Academy</span>
+            <img class="copyright__image" src="img/content/htmlacademy.svg" width="28" height="34" alt="Логотип htmlacademy">
+          </a>
         </div>
       </div>
     </footer>

@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg">
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="manifest" href="/manifest.webmanifest">
     <!--   ---   -->
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,9 +17,9 @@
       <div class="main-header__container container">
         <a class="main-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/main-header/logo-desktop.svg" width="202px" height="58px">
-            <source media="(min-width: 768px)" srcset="img/main-header/logo-tablet.svg" width="174px" height="52px">
-            <img class="main-header__image" src="img/main-header/logo-mobile.svg" width="192px" height="38px" alt="Логотип">
+            <source media="(min-width: 1200px)" srcset="img/content/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/content/logo-tablet.svg">
+            <img class="main-header__image" src="img/content/logo-mobile.svg" width="192" height="38" alt="Логотип">
           </picture>
         </a>
         <nav class="header-nav header-nav--closed header-nav--nojs">
@@ -147,22 +147,25 @@
         <ul class="main-footer__social social-list">
           <li class="social-list__item">
             <a href="" class="social-list__link">
-              <img class="social-list__icon" src="img/main-footer/vk.svg" width="28" height="22" alt="Вконтакте">
+              <img class="social-list__icon" src="img/content/vk.svg" width="28" height="22" alt="Вконтакте">
             </a>
           </li>
           <li class="social-list__item">
             <a href="" class="social-list__link">
-              <img class="social-list__icon" src="img/main-footer/youtube.svg" width="28" height="22" alt="Ютуб">
+              <img class="social-list__icon" src="img/content/youtube.svg" width="28" height="22" alt="Ютуб">
             </a>
           </li>
           <li class="social-list__item">
             <a href="" class="social-list__link">
-              <img class="social-list__icon" src="img/main-footer/telegram.svg" width="28" height="22" alt="Телеграм">
+              <img class="social-list__icon" src="img/content/telegram.svg" width="28" height="22" alt="Телеграм">
             </a>
           </li>
         </ul>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/">
+            <span class="copyright__text">HTML Academy</span>
+            <img class="copyright__image" src="img/content/htmlacademy.svg" width="28" height="34" alt="Логотип htmlacademy">
+          </a>
         </div>
       </div>
     </footer>

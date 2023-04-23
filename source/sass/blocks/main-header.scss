@@ -62,3 +62,15 @@
     margin-top: 52px;
   }
 }
+
+.main-header__image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 58px;
+  }
+}
