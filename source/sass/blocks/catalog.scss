@@ -41,7 +41,7 @@
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 82px;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     row-gap: 140px;

@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    position: relative;
     top: -136px;
     padding: 0 110px;
   }
@@ -51,7 +51,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 70px;
     padding: 0 30px;
     font-size: 16px;
     line-height: 24px;
@@ -61,7 +61,7 @@
     width: 45%;
     max-width: 1440px;
     padding: 0 110px;
-    padding-top: 70px;
+    margin-top: -34px;
   }
 }
 
@@ -87,7 +87,7 @@
 .example__list {
   display: flex;
   justify-content: center;
-  column-gap: 32px;
+  column-gap: 42px;
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
@@ -196,7 +196,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 0px;
+    top: 0;
   }
 }
 
@@ -214,7 +214,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -38%;
+    top: -34%;
     right: 0;
     max-width: 1440px;
     padding: 0 110px;
@@ -271,6 +271,7 @@
 
 .example__image-tablet {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
