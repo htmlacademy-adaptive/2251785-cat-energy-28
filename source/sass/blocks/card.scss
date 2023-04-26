@@ -39,6 +39,9 @@
 }
 
 .card__image {
+  width: 30px;
+  height: 30px;
+
   @media (min-width: $tablet-width) {
     width: 168px;
     height: 200px;
@@ -168,6 +171,10 @@
   &--more {
     background-color: $basic_grey;
     color: $special_dark-grey;
+
+  &:hover {
+    background-color: $special_grey-2;
+  }
 
     @media (min-width: $tablet-width) {
       margin-top: auto;

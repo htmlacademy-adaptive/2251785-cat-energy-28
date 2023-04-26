@@ -1,5 +1,15 @@
-.catalog {
-  padding-top: 28px;
+.catalog__container {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .catalog__title {
@@ -13,14 +23,13 @@
   color: $basic_black;
 
   @media (max-width: $mobile-width-only) {
-    padding-bottom: 42px;
-    margin-bottom: 24px;
-
     @include delimiter;
+
+    padding-bottom: 42px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 162px;
+    padding-bottom: 162px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -51,8 +60,7 @@
   @media (max-width: $mobile-width-only) {
     @include delimiter;
 
-    margin-bottom: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
   }
 
   @media (min-width: $tablet-width) {

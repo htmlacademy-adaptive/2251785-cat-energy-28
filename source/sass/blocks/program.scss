@@ -1,8 +1,20 @@
 .program {
-  padding: 28px 0 32px 0;
   font-family: $font-oswald;
   font-style: normal;
   color: $basic_black;
+}
+
+.program__container {
+  padding-top: 28px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .program__title {
@@ -13,6 +25,7 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
     font-size: 60px;
     line-height: 60px;
   }

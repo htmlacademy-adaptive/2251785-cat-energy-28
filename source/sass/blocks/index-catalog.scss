@@ -136,6 +136,7 @@
 .index-catalog__link {
   display: flex;
   align-items: center;
+  column-gap: 25px;
   margin-top: auto;
   padding-top: 15px;
   padding-bottom: 18px;
@@ -148,14 +149,6 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &::after {
-    content: "";
-    min-width: 24px;
-    height: 12px;
-    margin-left: 16px;
-    background-image: url("../img/icons/arrow.svg");
-  }
-
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
@@ -166,4 +159,9 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.index-catalog__link:hover .index-catalog__icon {
+  width: 32px;
+  height: 12px;
 }

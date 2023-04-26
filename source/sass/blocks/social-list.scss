@@ -32,8 +32,40 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .social-list__icon{
+    color: $basic_green;
+  }
 }
 
 .social-list__icon {
-  display: block; //отступ под иконкой
+  color: $special_grey-3;
+  vertical-align: middle;
+
+  &--vk {
+    width: 28px;
+    height: 17px;
+  }
+
+  &--youtube {
+    width: 25px;
+    height: 19px;
+  }
+
+  &--telegram {
+    width: 21px;
+    height: 18px;
+  }
+
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
