@@ -1,7 +1,40 @@
 .copyright__link {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: $special_dark-grey;
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .copyright__icon {
+    color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 28px;
+  }
+}
+
+.copyright__icon {
+  width: 28px;
+  height: 34px;
+  color: $special_grey-3;
+}
+
+.copyright__link:hover .copyright__icon {
+  color: $basic_green;
 }

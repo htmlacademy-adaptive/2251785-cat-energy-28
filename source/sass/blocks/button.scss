@@ -11,4 +11,14 @@
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+}
+
+.button__text {
+  &:active {
+    opacity: 0.3;
+  }
 }

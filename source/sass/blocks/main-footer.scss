@@ -14,6 +14,23 @@
   }
 }
 
+.main-footer__logo {
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-footer__icon {
+  width: 142px;
+  height: 26px;
+}
+
 .main-footer__social {
   margin: 0 20px;
   padding: 0;
@@ -30,19 +47,5 @@
 .main-footer__copyright {
   @media (max-width: $mobile-width-only) {
     width: 100%;
-  }
-}
-
-.copyright__link {
-  display: flex;
-  align-items: center;
-
-  @media (max-width: $mobile-width-only) {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $tablet-width) {
-    column-gap: 28px;
   }
 }

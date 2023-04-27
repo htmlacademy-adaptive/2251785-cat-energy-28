@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    position: relative;
     top: -136px;
     padding: 0 110px;
   }
@@ -51,7 +51,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 70px;
     padding: 0 30px;
     font-size: 16px;
     line-height: 24px;
@@ -61,7 +61,7 @@
     width: 45%;
     max-width: 1440px;
     padding: 0 110px;
-    padding-top: 70px;
+    margin-top: -34px;
   }
 }
 
@@ -71,7 +71,7 @@
   @media (min-width: $tablet-width) {
     @include flex-space-between;
     column-gap: 166px;
-    margin-bottom: 96px;
+    margin-bottom: 256px;
     padding: 0 30px;
   }
 
@@ -87,7 +87,7 @@
 .example__list {
   display: flex;
   justify-content: center;
-  column-gap: 32px;
+  column-gap: 42px;
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
@@ -189,6 +189,17 @@
   }
 }
 
+.slider__container {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+}
+
 .example__slider {
   @include flex-column;
   position: relative;
@@ -203,7 +214,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -38%;
+    top: -34%;
     right: 0;
     max-width: 1440px;
     padding: 0 110px;
@@ -237,7 +248,31 @@
 }
 
 .example__slider-image {
+  color: $special_grey-3;
+
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:active {
+    color: $basic_green-2;
+  }
+
   @media (min-width: $tablet-width) {
     height: 512px;
+  }
+}
+
+.example__image-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.example__image-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
