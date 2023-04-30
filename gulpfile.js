@@ -11,7 +11,6 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
-import multiDest from 'gulp-multi-dest';
 
 // Styles
 
@@ -22,7 +21,7 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(multiDest(['build/css', 'source/css'], { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -36,7 +35,7 @@ const clean = () => {
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2,woff}',
+    'source/fonts/**/*.{woff2,woff}',
     'source/favicon.ico',
     'source/manifest.webmanifest',
   ], {
@@ -63,7 +62,7 @@ const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(multiDest(['build/img', 'source/img']));
+    .pipe(gulp.dest('build/img'));
 }
 
 // HTML
@@ -98,11 +97,13 @@ const copyImages = () => {
 // Webp
 
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src([
+    'source/img/content/*.{jpg,png}'
+  ])
     .pipe(squoosh({
       webp: {}
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/content'));
 }
 
 // Server
@@ -110,7 +111,7 @@ const createWebp = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,

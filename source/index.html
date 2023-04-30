@@ -117,10 +117,16 @@
           <div class="example__slider">
             <div class="slider__container">
               <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/content/before-tablet@1x.webp 1x, img/content/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/before-mobile@1x.webp 1x, img/content/before-mobile@2x.webp 2x">
+
                 <source media="min-width=(min-width: 768px)" srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
                 <img class="example__image example__image--before" src="img/content/before-mobile@1x.png" width="280" height="256" srcset="img/content/before-mobile@2x.png 2x" alt="Кот до функционального питания.">
               </picture>
               <picture style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/content/after-tablet@1x.webp 1x, img/content/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/after-mobile@1x.webp 1x, img/content/after-mobile@2x.webp 2x">
+
                 <source media="min-width=(min-width: 768px)" srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
                 <img class="example__image example__image--after" src="img/content/after-mobile@1x.png" width="280" height="256" srcset="img/content/after-mobile@2x.png 2x" alt="Кот после функционального питания.">
               </picture>
