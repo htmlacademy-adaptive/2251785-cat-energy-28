@@ -11,6 +11,7 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
+import multiDest from 'gulp-multi-dest';
 
 // Styles
 
@@ -21,7 +22,7 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(multiDest(['build/css', 'source/css'], { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -49,8 +50,8 @@ const copy = (done) => {
 
 const svg = () =>
   gulp.src([
-    'source/img/content/*.svg',
-    'source/img/common/*.svg'
+    'source/img/**/*.svg',
+    '!source/img/icons/*.svg'
   ])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
@@ -62,14 +63,14 @@ const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+    .pipe(multiDest(['build/img', 'source/img']));
 }
 
 // HTML
 
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin())
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -129,7 +130,7 @@ const watcher = () => {
 
 // Build
 
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
