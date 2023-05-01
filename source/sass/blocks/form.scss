@@ -83,6 +83,10 @@
   width: 20px;
   height: 20px;
   stroke: $special_dark-grey-2;
+
+  @media (max-width: $mobile-width-only) {
+    right: 14px;
+  }
 }
 
 .form__input:focus + .form__icon {
@@ -138,6 +142,10 @@
     // outline-color: $status_error;
   }
 
+  @media (max-width: $mobile-width-only) {
+    padding: 14px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -146,6 +154,10 @@
 
 .form__label--mail .form__input {
   padding-right: 44px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-right: 38px;
+  }
 }
 
 .form__label--tel .form__input {
@@ -245,14 +257,50 @@
 }
 
 .form__legend {
+  position: relative;
+  display: inline-block;
+  max-width: max-content;
+  width: 100%;
+  background-color: $basic_white;
   margin: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
 
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: $basic_green;
+    transform: translateY(50%);
+    z-index: -1;
+  }
+
+  &::before {
+    left: -100vw;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    // max-width: fit-content;
+    padding-right: 20px;
+
+    &::before {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 0 40px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
   }
 }
 
