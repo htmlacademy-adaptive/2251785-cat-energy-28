@@ -115,6 +115,16 @@
   &--tel {
     min-width: 86px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    &--mail {
+      min-width: 50px;
+    }
+
+    &--tel {
+      min-width: 68px;
+    }
+  }
 }
 
 .form__input {
@@ -156,12 +166,17 @@
   padding-right: 44px;
 
   @media (max-width: $mobile-width-only) {
+    min-width: 220px;
     padding-right: 38px;
   }
 }
 
 .form__label--tel .form__input {
   padding-right: 44px;
+
+  @media (max-width: $mobile-width-only) {
+    min-width: 204px;
+  }
 }
 
 .form__radio-list {
@@ -266,6 +281,12 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  &--contacts {
+    @media (max-width: $mobile-width-only) {
+      width: 210px;
+    }
+  }
 
   &::before,
   &::after {
