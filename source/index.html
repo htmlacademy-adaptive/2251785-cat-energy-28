@@ -117,10 +117,16 @@
           <div class="example__slider">
             <div class="slider__container">
               <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/content/before-tablet@1x.webp 1x, img/content/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/before-mobile@1x.webp 1x, img/content/before-mobile@2x.webp 2x">
+
                 <source media="min-width=(min-width: 768px)" srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
                 <img class="example__image example__image--before" src="img/content/before-mobile@1x.png" width="280" height="256" srcset="img/content/before-mobile@2x.png 2x" alt="Кот до функционального питания.">
               </picture>
               <picture style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/content/after-tablet@1x.webp 1x, img/content/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/after-mobile@1x.webp 1x, img/content/after-mobile@2x.webp 2x">
+
                 <source media="min-width=(min-width: 768px)" srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
                 <img class="example__image example__image--after" src="img/content/after-mobile@1x.png" width="280" height="256" srcset="img/content/after-mobile@2x.png 2x" alt="Кот после функционального питания.">
               </picture>
@@ -157,21 +163,21 @@
           <li class="social-list__item">
             <a href="" class="social-list__link" aria-label="Вконтакте.">
               <svg class="social-list__icon social-list__icon--vk" role="img">
-                <use href="img/sprite.svg#icon-vk"></use>
+                <use href="img/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a href="" class="social-list__link" aria-label="Ютуб.">
               <svg class="social-list__icon social-list__icon--youtube" role="img">
-                <use href="img/sprite.svg#icon-youtube"></use>
+                <use href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a href="" class="social-list__link" aria-label="Телеграм.">
               <svg class="social-list__icon social-list__icon--telegram" role="img">
-                <use href="img/sprite.svg#icon-telegram"></use>
+                <use href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
@@ -180,7 +186,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy">
             <span class="copyright__text">HTML Academy</span>
             <svg class="copyright__icon" role="img">
-              <use href="img/sprite.svg#icon-htmlacademy"></use>
+              <use href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>

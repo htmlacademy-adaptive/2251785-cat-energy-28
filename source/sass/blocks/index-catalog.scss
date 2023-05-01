@@ -67,7 +67,7 @@
   &--loss::before {
     @include index-catalog-icon;
     content: "";
-    background-image: url("../img/icons/cat-loss.svg");
+    background-image: url("../img/common/cat-loss.svg");
     margin-right: 18px;
 
     @media (min-width: $tablet-width) {
@@ -92,7 +92,7 @@
   &--gain::before {
     @include index-catalog-icon;
     content: "";
-    background-image: url("../img/icons/cat-gain.svg");
+    background-image: url("../img/common/cat-gain.svg");
     margin-right: 10px;
 
     @media (min-width: $tablet-width) {
@@ -170,7 +170,7 @@
     width: 24px;
     min-width: 24px;
     height: 10px;
-    background-image: url("../img/icons/arrow.svg");
+    background-image: url("../img/common/arrow.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 24px 10px;

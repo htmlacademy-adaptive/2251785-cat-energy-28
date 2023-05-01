@@ -45,6 +45,8 @@
 
 .contacts__map {
   display: block; //убирает отступ под картой
+  // margin: 0 auto;
+  // max-width: 1440px;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
