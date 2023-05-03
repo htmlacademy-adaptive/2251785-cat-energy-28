@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 76px;
+    padding-bottom: 70px;
     background-color: $basic_grey;
   }
 }
@@ -21,7 +21,7 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   padding: 0 20px;
   padding-top: 25px;
   font-family: $font-oswald;
@@ -32,6 +32,7 @@
   color: $basic_black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
     padding: 0 30px;
     padding-top: 42px;
     font-size: 60px;
@@ -41,6 +42,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     top: -136px;
+    margin-bottom: 42px;
     padding: 0 110px;
   }
 }
@@ -50,8 +52,12 @@
   margin-bottom: 20px;
   padding: 0 20px;
 
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 18px;
+  }
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 54px;
     padding: 0 30px;
     font-size: 16px;
     line-height: 24px;
@@ -60,8 +66,9 @@
   @media (min-width: $desktop-width) {
     width: 45%;
     max-width: 1440px;
+    margin-top: -32px;
+    margin-bottom: 70px;
     padding: 0 110px;
-    margin-top: -34px;
   }
 }
 
@@ -91,7 +98,7 @@
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 38px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,7 +156,7 @@
   color: $basic_black;
   text-align: center;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -172,6 +179,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 174px;
+    margin-top: 6px;
     text-align: right;
     font-size: 20px;
     line-height: 30px;
@@ -192,11 +200,11 @@
 .slider__container {
   @media (min-width: $tablet-width) {
     position: relative;
-    top: -150px;
+    top: -126px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
+    top: -2px; //Подгон
   }
 }
 
@@ -208,13 +216,14 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    max-height: 462px;
     padding: 0 30px;
     background-color: $basic_grey;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -34%;
+    top: -26%;
     right: 0;
     max-width: 1440px;
     padding: 0 110px;

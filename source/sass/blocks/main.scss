@@ -26,7 +26,13 @@
 .main__advantages {
   margin-bottom: 50px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-bottom: 60px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 220px;
+    padding-bottom: 0;
   }
 }
