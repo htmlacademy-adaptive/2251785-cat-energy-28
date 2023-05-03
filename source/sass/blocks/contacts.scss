@@ -4,6 +4,7 @@
 
 .contacts__container {
   @include flex-space-between;
+  overflow: hidden;
   align-items: center;
   column-gap: 0;
   padding-top: 26px;

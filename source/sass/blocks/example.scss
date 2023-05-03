@@ -42,6 +42,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     top: -136px;
+    max-width: 60%;
     margin-bottom: 42px;
     padding: 0 110px;
   }
@@ -120,6 +121,7 @@
 
 .example__term {
   position: absolute;
+  overflow: hidden;
   bottom: -16px;
   left: 50%;
   padding: 0 14px;
@@ -223,7 +225,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -26%;
+    top: -100px;
     right: 0;
     max-width: 1440px;
     padding: 0 110px;
