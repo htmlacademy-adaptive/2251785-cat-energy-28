@@ -38,6 +38,7 @@
 
 .main-footer__icon {
   display: block; // Отступ под картинкой
+
   @media (min-width: $tablet-width) {
     width: 142px;
     height: 26px;
