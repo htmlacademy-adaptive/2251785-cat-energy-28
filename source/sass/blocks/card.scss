@@ -176,6 +176,11 @@
       background-color: $special_grey-2;
     }
 
+    &:focus {
+      outline: none;
+      background-color: $special_grey-2;
+    }
+
     @media (min-width: $tablet-width) {
       margin-top: auto;
     }

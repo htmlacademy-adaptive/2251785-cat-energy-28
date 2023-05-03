@@ -7,12 +7,25 @@
   color: $special_dark-grey;
   text-decoration: none;
 
+  &::after {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 34px;
+    background-color: $special_grey-3;
+    mask-image: url("../img/sprite.svg#htmlacademy");
+  }
+
+  &:hover::after {
+    background-color: $basic_green;
+  }
+
   &:focus {
     outline: none;
   }
 
-  &:focus .copyright__icon {
-    color: $basic_green;
+  &:focus::after {
+    background-color: $basic_green;
   }
 
   &:active {
@@ -27,14 +40,4 @@
   @media (min-width: $tablet-width) {
     column-gap: 28px;
   }
-}
-
-.copyright__icon {
-  width: 28px;
-  height: 34px;
-  color: $special_grey-3;
-}
-
-.copyright__link:hover .copyright__icon {
-  color: $basic_green;
 }

@@ -27,8 +27,11 @@
 }
 
 .main-footer__icon {
-  width: 142px;
-  height: 26px;
+  display: block; // Отступ под картинкой
+  @media (min-width: $tablet-width) {
+    width: 142px;
+    height: 26px;
+  }
 }
 
 .main-footer__social {

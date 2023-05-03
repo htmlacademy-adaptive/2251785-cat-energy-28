@@ -79,22 +79,22 @@
 
 .advantages__item--nutrients::before {
   @include advantages-icon;
-  background-image: url("../img/common/nutrients.svg");
+  background-image: url("../img/sprite.svg#nutrients");
 }
 
 .advantages__item--powder::before {
   @include advantages-icon;
-  background-image: url("../img/common/powder.svg");
+  background-image: url("../img/sprite.svg#powder");
 }
 
 .advantages__item--meal::before {
   @include advantages-icon;
-  background-image: url("../img/common/meal.svg");
+  background-image: url("../img/sprite.svg#meal");
 }
 
 .advantages__item--changes::before {
   @include advantages-icon;
-  background-image: url("../img/common/changes.svg");
+  background-image: url("../img/sprite.svg#changes");
 }
 
 .advantages__text {
