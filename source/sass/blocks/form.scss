@@ -115,6 +115,16 @@
   &--tel {
     min-width: 86px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    &--mail {
+      min-width: 50px;
+    }
+
+    &--tel {
+      min-width: 68px;
+    }
+  }
 }
 
 .form__input {
@@ -156,12 +166,17 @@
   padding-right: 44px;
 
   @media (max-width: $mobile-width-only) {
+    min-width: 220px;
     padding-right: 38px;
   }
 }
 
 .form__label--tel .form__input {
   padding-right: 44px;
+
+  @media (max-width: $mobile-width-only) {
+    min-width: 204px;
+  }
 }
 
 .form__radio-list {
@@ -267,6 +282,12 @@
   font-size: 24px;
   line-height: 26px;
 
+  &--contacts {
+    @media (max-width: $mobile-width-only) {
+      width: 210px;
+    }
+  }
+
   &::before,
   &::after {
     content: "";
@@ -358,6 +379,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 90px;
   }
 }
 
@@ -418,7 +440,7 @@
       height: 14px;
       top: 50%;
       left: 50%;
-      background-image: url("../img/common/check-mark.svg");
+      background-image: url("../img/sprite.svg#check-mark");
       background-size: 18px 14px;
       background-repeat: no-repeat;
       transform: translateX(-50%) translateY(-50%);
@@ -480,7 +502,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 46%;
   }
 }
 

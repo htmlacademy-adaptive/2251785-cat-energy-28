@@ -147,6 +147,11 @@
     opacity: 0.6;
   }
 
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
   &:active:not(.header-nav__link--current) {
     opacity: 0.3;
   }

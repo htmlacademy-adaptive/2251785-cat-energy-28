@@ -1,10 +1,14 @@
+.catalog {
+  overflow: hidden;
+}
+
 .catalog__container {
   @media (max-width: $mobile-width-only) {
     padding-top: 28px;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 64px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,7 +45,7 @@
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 82px;
+    margin-bottom: 74px;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     row-gap: 140px;
@@ -60,10 +64,15 @@
   @media (max-width: $mobile-width-only) {
     @include delimiter;
 
-    padding: 24px 0;
+    padding-top: 18px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 14%;
+    padding: 0 12%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 15%;
   }
 }

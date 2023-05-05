@@ -4,6 +4,7 @@
     "img  title"
     "img  items"
     "btn  btn";
+  grid-template-columns: repeat(2, 50%);
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -15,6 +16,7 @@
 
   @media (min-width: $tablet-width) {
     @include flex-column;
+    min-height: 430px;
     background-color: $basic_grey;
 
     &--more {
@@ -32,9 +34,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -80px;
+    margin-top: -72px;
     margin-bottom: 34px;
     align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
   }
 }
 
@@ -47,6 +53,8 @@
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 196px;
+    margin-top: -6px;
+    margin-bottom: -4px;
   }
 
   &--more {
@@ -58,8 +66,12 @@
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      margin-top: 48px;
-      margin-bottom: 44px;
+      margin-top: 56px;
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 52px;
     }
   }
 }
@@ -77,7 +89,8 @@
   text-transform: uppercase;
 
   &--more {
-    margin-bottom: 22px;
+    min-width: 166px;
+    margin-bottom: 26px;
     align-self: center;
     color: #111111;
   }
@@ -86,7 +99,7 @@
     max-width: 76px;
 
     &--more {
-      max-width: 134px;
+      max-width: 210px;
       margin-bottom: 8px;
       text-align: center;
     }
@@ -103,6 +116,10 @@
       margin-bottom: 48px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
+  }
 }
 
 .card__items {
@@ -110,7 +127,7 @@
   grid-area: items;
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 18px;
+    margin-top: 8px;
     margin-bottom: 8px;
   }
 
@@ -134,7 +151,7 @@
 }
 
 .card__description {
-  max-width: 145px;
+  max-width: 146px;
   margin: 0;
 }
 
@@ -142,28 +159,31 @@
   margin: 0;
 
   &--more {
+    max-width: 166px;
     align-self: center;
-  }
 
-  @media (max-width: $mobile-width-only) {
-    &--more {
+    @media (max-width: $mobile-width-only) {
+      min-width: 220px;
+      text-align: center;
       margin-bottom: 8px; // 20 - 12
       font-size: 12px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    &--more {
+    @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 18px;
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 20px;
     }
   }
 }
 
 .card__button {
   min-height: 40px;
-  margin-top: 12px;
+  margin-top: auto;
   padding: 0;
   text-align: center;
   grid-area: btn;
@@ -176,9 +196,18 @@
       background-color: $special_grey-2;
     }
 
+    &:focus {
+      outline: none;
+      background-color: $special_grey-2;
+    }
+
     @media (min-width: $tablet-width) {
       margin-top: auto;
     }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 6px;
   }
 
   @media (min-width: $tablet-width) {

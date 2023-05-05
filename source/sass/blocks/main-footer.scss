@@ -1,6 +1,16 @@
 .main-footer {
   padding: 40px 0;
   background-color: $basic_grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 0;
+    min-height: 148px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 0;
+    min-height: 170px;
+  }
 }
 
 .main-footer__container {
@@ -27,13 +37,18 @@
 }
 
 .main-footer__icon {
-  width: 142px;
-  height: 26px;
+  display: block; // Отступ под картинкой
+
+  @media (min-width: $tablet-width) {
+    width: 142px;
+    height: 26px;
+  }
 }
 
 .main-footer__social {
   margin: 0 20px;
   padding: 0;
+  // transform: translateX(10%); // Подгон
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
