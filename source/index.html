@@ -29,7 +29,7 @@
           </picture>
         </a>
         <nav class="header-nav header-nav--nojs header-nav--closed">
-          <button class="header-nav__toggle" aria-label="Кнопка меню.">
+          <button class="header-nav__toggle" type="button" aria-label="Кнопка меню.">
             <span></span>
           </button>
           <ul class="header-nav__list">
@@ -118,7 +118,7 @@
                 <dd class="example__quantity">60 ДНЕЙ</dd>
               </div>
             </dl>
-            <h3 class="example__total">Затраты на питание: <span class="example__total--price">15 000 РУБ.</span></h3>
+            <h3 class="example__total">Затраты на питание: <span class="example__total-price">15 000 РУБ.</span></h3>
           </div>
           <div class="example__slider">
             <div class="example__holder">
@@ -127,17 +127,17 @@
                 <source type="image/webp" srcset="img/content/before-mobile@1x.webp 1x, img/content/before-mobile@2x.webp 2x">
 
                 <source media="(min-width: 768px)" srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
-                <img class="example__image example__image--before" src="img/content/before-mobile@1x.png" loading="lazy" width="280" height="256" srcset="img/content/before-mobile@2x.png 2x" alt="Кот до функционального питания.">
+                <img class="example__image example__image--before" src="img/content/before-mobile@1x.png" width="280" height="256" loading="lazy" srcset="img/content/before-mobile@2x.png 2x" alt="Кот до функционального питания.">
               </picture>
               <picture style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">
                 <source media="(min-width: 768px)" type="image/webp" srcset="img/content/after-tablet@1x.webp 1x, img/content/after-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/content/after-mobile@1x.webp 1x, img/content/after-mobile@2x.webp 2x">
 
                 <source media="(min-width: 768px)" srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
-                <img class="example__image example__image--after" src="img/content/after-mobile@1x.png" loading="lazy" width="280" height="256" srcset="img/content/after-mobile@2x.png 2x" alt="Кот после функционального питания.">
+                <img class="example__image example__image--after" src="img/content/after-mobile@1x.png" width="280" height="256" loading="lazy" srcset="img/content/after-mobile@2x.png 2x" alt="Кот после функционального питания.">
               </picture>
               <div class="example__slider-control">
-                <button class="example__slider-button" aria-label="Ползунок.">
+                <button class="example__slider-button" type="button" aria-label="Ползунок.">
                   <svg class="example__slider-image" width="40" height="256" aria-hidden="true">
                     <use class="example__image-mobile" href="img/sprite.svg#slider-mobile"></use>
                     <use class="example__image-tablet" href="img/sprite.svg#slider-tablet"></use>
@@ -152,16 +152,25 @@
         <div class="contacts__container container">
           <h2 class="contacts-title">приглашаем <br> к сотрудничеству <br> дилеров!</h2>
           <address class="contacts__address">
-            ул. Большая <br> Конюшенная, д. 19/8 <span class="contacts__address--city">Санкт-Петербург</span>
+            ул. Большая <br> Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span>
           </address>
         </div>
-        <iframe class="contacts__map" src="https://maps.google.com/maps?width=100%25&amp;height=362&amp;hl=ru&amp;q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F,%20%D0%B4.%2019/8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3+(Map)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <iframe class="contacts__map contacts__map--nojs" loading="lazy" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd6ebc4af9a1fbcf1dca1089653f59613f06d1615269b3e5cd36eb40f1c1a35&amp;source=constructor"></iframe>
+        <picture>
+          <source media="(min-width: 1440px)" type="image/webp" srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/map-mobile@1x.webp 1x, img/content/map-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1440px)" srcset="img/content/map-desktop@1x.png 1x, img/content/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/content/map-tablet@1x.png 1x, img/content/map-tablet@2x.png 2x">
+          <img class="contacts__map-image" src="img/content/map-mobile@1x.png" width="320" height="362" srcset="img/content/map-mobile@2x.png 2x" alt="Карта">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__container container">
         <a class="main-footer__logo" href="#" aria-label="Логотип CAT ENERGY.">
-          <img class="main-footer__icon" src="img/content/footer-logo.svg" loading="lazy" alt="Логотип CAT ENERGY">
+          <img class="main-footer__icon" src="img/content/footer-logo.svg" width="128" height="24" loading="lazy" alt="Логотип CAT ENERGY">
         </a>
         <ul class="main-footer__social social-list">
           <li class="social-list__item">
