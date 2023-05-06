@@ -10,12 +10,17 @@
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 64px;
+    padding-top: 50px;
+    padding-right: 68px;
+    padding-bottom: 72px;
+    padding-left: 68px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 74px;
+    padding-right: 110px;
     padding-bottom: 82px;
+    padding-left: 110px;
   }
 }
 
@@ -40,6 +45,10 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 38px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 64px;

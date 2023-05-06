@@ -9,28 +9,28 @@
     <link rel="icon" href="img/favicons/icon.svg">
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
-    <!--   ---   -->
+    <!--    -    -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Предзагрузка -->
     <link rel="preload" href="css/style.css" as="style">
     <link rel="preload" href="js/script.js" as="script">
-    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
-    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
-    <!--   ---   -->
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <!--      -      -->
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container container">
         <a class="main-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/content/logo-desktop.svg">
+            <source media="(min-width: 1440px)" srcset="img/content/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/content/logo-tablet.svg">
             <img class="main-header__image" src="img/content/logo-mobile.svg" width="192" height="38" alt="Логотип">
           </picture>
         </a>
         <nav class="header-nav header-nav--closed header-nav--nojs">
-          <button class="header-nav__toggle">
-            <span><p class="visually-hidden">Кнопка меню.</p></span>
+          <button class="header-nav__toggle" aria-label="Кнопка меню.">
+            <span></span>
           </button>
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -47,7 +47,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="catalog">
+      <section class="main__catalog catalog">
         <div class="catalog__container container">
           <h1 class="catalog__title">Каталог продукции</h1>
           <ul class="catalog__list">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="card__wrapper">
                   <dt class="card__term">Цена</dt>
-                  <dd class="card__description">700 ₽</d>
+                  <dd class="card__description">700 ₽</dd>
                 </div>
               </dl>
               <a class="card__button button" href="#"><span class="button__text">Заказать</span></a>
@@ -244,7 +244,7 @@
               <img class="card__image card__image--more" src="img/content/more.svg" alt="Показать больше.">
               <h3 class="card__heading card__heading--more">Показать еще 100500 товаров</h3>
               <p class="card__sub-title card__sub-title--more">На самом деле вкусов гораздо больше!</p>
-              <button class="card__button card__button--more button" href="#"><span class="button__text">показать все</span></button>
+              <button class="card__button card__button--more button"><span class="button__text">показать все</span></button>
             </li>
           </ul>
           <div class="additional">
@@ -307,7 +307,7 @@
             ул. Большая <br> Конюшенная, д. 19/8 <span class="contacts__address--city">Санкт-Петербург</span>
           </address>
         </div>
-        <iframe class="contacts__map" width="100%" height="362" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=362&amp;hl=ru&amp;q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F,%20%D0%B4.%2019/8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3+(Map)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <iframe class="contacts__map" src="https://maps.google.com/maps?width=100%25&amp;height=362&amp;hl=ru&amp;q=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F,%20%D0%B4.%2019/8%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3+(Map)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
       </section>
     </main>
     <footer class="main-footer">

@@ -1,15 +1,11 @@
 .example {
-  padding: 0;
-  padding-bottom: 40px;
   background-color: $basic_grey;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
     background-color: $basic_white;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 70px;
     background-color: $basic_grey;
   }
 }
@@ -17,6 +13,15 @@
 .example__container {
   position: relative;
   padding: 0;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .example__title {
@@ -199,7 +204,7 @@
   }
 }
 
-.slider__container {
+.example__holder {
   @media (min-width: $tablet-width) {
     position: relative;
     top: -126px;
