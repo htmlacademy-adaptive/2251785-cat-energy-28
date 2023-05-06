@@ -85,6 +85,11 @@
 
   .header-nav--nojs .header-nav__list {
     display: block;
+    position: relative;
+    left: -20px;
+    margin-top: 0;
+    padding-top: 66px;
+    background-color: transparent;
   }
 }
 
@@ -117,6 +122,7 @@
   padding-bottom: 24px;
 
   @media (max-width: $mobile-width-only) {
+    min-width: 320px;
     border-bottom: 1px solid $basic-grey-2;
   }
 

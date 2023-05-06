@@ -48,7 +48,7 @@
 .main-footer__social {
   margin: 0 20px;
   padding: 0;
-  // transform: translateX(10%); // Подгон
+
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
@@ -56,6 +56,10 @@
     padding: 20px 0;
     border-top: 1px solid $special_grey-4;
     border-bottom: 1px solid $special_grey-4;
+  }
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(10%); // Подгон
   }
 }
 
