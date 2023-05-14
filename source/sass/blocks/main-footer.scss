@@ -37,7 +37,7 @@
 }
 
 .main-footer__icon {
-  display: block; // Отступ под картинкой
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 142px;
@@ -59,7 +59,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    transform: translateX(10%); // Подгон
+    transform: translateX(10%);
   }
 }
 

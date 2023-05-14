@@ -171,7 +171,6 @@
 
   &:invalid {
     outline: 2px solid $status_error;
-    // outline-color: $status_error;
   }
 
   @media (max-width: $mobile-width-only) {
